@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://turkeyloans.intechdev.net/sitemap.xml
+
+# Language-specific sitemaps
+Sitemap: https://turkeyloans.intechdev.net/sitemap-ar.xml
+Sitemap: https://turkeyloans.intechdev.net/sitemap-en.xml
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
+
+# Disallow admin and private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+
+# Allow all language versions
+Allow: /ar/
+Allow: /en/
+
+# Host declaration
+Host: https://turkeyloans.intechdev.net
