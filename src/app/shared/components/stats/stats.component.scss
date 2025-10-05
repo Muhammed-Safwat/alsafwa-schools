@@ -1,0 +1,144 @@
+/*--------------------------------------------------------------
+# Stats Section
+--------------------------------------------------------------*/
+.stats .stats-overview {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stats .stats-overview .stats-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.stats .stats-overview .stats-description {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.stats .stats-overview .stats-cta {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.stats .stats-overview .stats-cta .btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.stats .stats-overview .stats-cta .btn-primary:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+.stats .stats-overview .stats-cta .btn-outline {
+  border: 2px solid var(--heading-color);
+  color: var(--heading-color);
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.stats .stats-overview .stats-cta .btn-outline:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+@media (max-width: 992px) {
+  .stats .stats-overview {
+    margin-bottom: 3rem;
+  }
+}
+
+.stats .stats-card {
+  background-color: var(--surface-color);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.stats .stats-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stats .stats-card .stats-icon {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: var(--accent-color);
+}
+
+.stats .stats-card .stats-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 0.5rem;
+  font-family: var(--heading-font);
+  line-height: 1;
+}
+
+.stats .stats-card .stats-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--default-color);
+}
+
+.stats .achievements-gallery {
+  margin-top: 2rem;
+}
+
+.stats .achievements-gallery .achievement-item {
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.stats .achievements-gallery .achievement-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.stats .achievements-gallery .achievement-item .achievement-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.stats .achievements-gallery .achievement-item .achievement-content h4 {
+  color: var(--contrast-color);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.stats .achievements-gallery .achievement-item .achievement-content p {
+  color: color-mix(in srgb, var(--contrast-color), transparent 20%);
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.stats .achievements-gallery .achievement-item:hover img {
+  transform: scale(1.1);
+}

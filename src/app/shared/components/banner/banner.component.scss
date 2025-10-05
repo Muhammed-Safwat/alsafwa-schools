@@ -1,0 +1,282 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  background-image: url('/assets/img/education/hero-bg.svg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero .hero-container {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 180px 0 80px 0;
+}
+
+.hero .hero-container .video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero .hero-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--background-color), transparent 30%) 0%, color-mix(in srgb, var(--background-color), transparent 60%) 100%);
+  z-index: 2;
+}
+
+.hero .hero-container .container {
+  z-index: 3;
+}
+
+.hero .hero-container .hero-content {
+  padding-right: 30px;
+}
+
+.hero .hero-container .hero-content h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+@media (max-width: 992px) {
+  .hero .hero-container .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero .hero-container .hero-content h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.hero .hero-container .hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 35px;
+  opacity: 0.9;
+}
+
+@media (max-width: 576px) {
+  .hero .hero-container .hero-content p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+.hero .hero-container .hero-content .cta-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 576px) {
+  .hero .hero-container .hero-content .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.hero .hero-container .hero-content .cta-buttons a {
+  padding: 14px 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .hero .hero-container .hero-content .cta-buttons a {
+    width: 100%;
+    max-width: 240px;
+  }
+}
+
+.hero .hero-container .hero-content .cta-buttons .btn-primary {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  border: 2px solid var(--accent-color);
+}
+
+.hero .hero-container .hero-content .cta-buttons .btn-primary:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero .hero-container .hero-content .cta-buttons .btn-secondary {
+  background-color: color-mix(in srgb, var(--surface-color), transparent 20%);
+  color: var(--default-color);
+  border: 2px solid var(--surface-color);
+}
+
+.hero .hero-container .hero-content .cta-buttons .btn-secondary:hover {
+  background-color: var(--surface-color);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 992px) {
+  .hero .hero-container .hero-content {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.hero .hero-container .stats-card {
+  background-color: color-mix(in srgb, var(--surface-color), transparent 95%);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hero .hero-container .stats-card .stats-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.hero .hero-container .stats-card .stats-header h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero .hero-container .stats-card .stats-header .decoration-line {
+  height: 3px;
+  width: 70px;
+  background-color: var(--accent-color);
+  margin: 0 auto;
+}
+
+.hero .hero-container .stats-card .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.hero .hero-container .stats-card .stats-grid .stat-item {
+  display: flex;
+  align-items: center;
+}
+
+.hero .hero-container .stats-card .stats-grid .stat-item .stat-icon {
+  font-size: 1.8rem;
+  height: 55px;
+  width: 55px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+  margin-inline-end: 12px;
+  flex-shrink: 0;
+}
+
+.hero .hero-container .stats-card .stats-grid .stat-item .stat-content h4 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+}
+
+.hero .hero-container .stats-card .stats-grid .stat-item .stat-content p {
+  opacity: 0.8;
+  margin: 5px 0 0 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 576px) {
+  .hero .hero-container .stats-card .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero .hero-container {
+    text-align: center;
+  }
+}
+
+.hero .event-ticker {
+  background-color: var(--accent-color);
+  padding: 25px 0;
+  color: var(--contrast-color);
+}
+
+.hero .event-ticker .ticker-item {
+  display: flex;
+  align-items: center;
+}
+
+.hero .event-ticker .ticker-item .date {
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-inline-end: 10px;
+  border: 1px solid color-mix(in srgb, var(--contrast-color), transparent 50%);
+}
+
+.hero .event-ticker .ticker-item .title {
+  margin-inline-end: 15px;
+  font-size: 0.95rem;
+}
+
+.hero .event-ticker .ticker-item .btn-register {
+  background-color: color-mix(in srgb, var(--contrast-color), transparent 85%);
+  color: var(--contrast-color);
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  margin: 0 20px;
+}
+
+.hero .event-ticker .ticker-item .btn-register:hover {
+  background-color: var(--contrast-color);
+  color: var(--accent-color);
+}
+
+/* RTL Adjustments for Arabic */
+html[lang="ar"] .hero .hero-container .hero-content {
+  padding-left: 30px;
+  padding-right: 0;
+  text-align: right;
+}
+
+html[lang="ar"] .hero .hero-container .hero-content h1,
+html[lang="ar"] .hero .hero-container .hero-content p {
+  text-align: right;
+}
+
+html[lang="ar"] .hero .hero-container .stats-card .stats-header {
+  text-align: right;
+}
+
+
+
+html[lang="ar"] .hero .hero-container .stats-card .stats-grid .stat-item .stat-icon {
+  margin-inline-start: 12px;
+  margin-inline-end: 0;
+  }

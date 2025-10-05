@@ -1,56 +1,68 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
+
+declare var PureCounter: any;
+declare var AOS: any;
 
 @Injectable({
   providedIn: 'root'
 })
 export class PreloaderService {
-  private isVisibleSubject = new BehaviorSubject<boolean>(true);
-  public isVisible$: Observable<boolean> = this.isVisibleSubject.asObservable();
+  private isLoading = new BehaviorSubject<boolean>(true);
+  public isLoading$ = this.isLoading.asObservable();
 
   constructor() {
-    // Auto-hide preloader after 3 seconds
-    setTimeout(() => {
-      this.hide();
-    }, 3000);
+    this.initializePreloader();
   }
 
-  /**
-   * Show the preloader
-   */
-  show(): void {
-    this.isVisibleSubject.next(true);
+  private initializePreloader() {
+    // إخفاء الـ preloader بعد تحميل الصفحة
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        this.hidePreloader();
+        this.initializeLibraries();
+      }, 1000); // تأخير لمدة ثانية واحدة
+    });
   }
 
-  /**
-   * Hide the preloader
-   */
-  hide(): void {
-    this.isVisibleSubject.next(false);
+  public hidePreloader() {
+    this.isLoading.next(false);
   }
 
-  /**
-   * Toggle preloader visibility
-   */
-  toggle(): void {
-    this.isVisibleSubject.next(!this.isVisibleSubject.value);
+  public showPreloader() {
+    this.isLoading.next(true);
   }
 
-  /**
-   * Get current preloader state
-   */
-  get isVisible(): boolean {
-    return this.isVisibleSubject.value;
+  private initializeLibraries() {
+    this.waitForPureCounter();
+    this.initializeAOS();
   }
 
-  /**
-   * Show preloader for a specific duration
-   * @param duration Duration in milliseconds
-   */
-  showFor(duration: number): void {
-    this.show();
-    setTimeout(() => {
-      this.hide();
-    }, duration);
+  private waitForPureCounter() {
+    const checkPureCounter = () => {
+      if (typeof PureCounter !== 'undefined') {
+        new PureCounter();
+      } else {
+        setTimeout(checkPureCounter, 100);
+      }
+    };
+    checkPureCounter();
+  }
+
+  private initializeAOS() {
+    const checkAOS = () => {
+      if (typeof AOS !== 'undefined') {
+        AOS.init({
+          duration: 1000,
+          once: true,
+          offset: 100,
+          easing: 'ease-in-out',
+          mirror: false
+        });
+      } else {
+        setTimeout(checkAOS, 100);
+      }
+    };
+    checkAOS();
   }
 }

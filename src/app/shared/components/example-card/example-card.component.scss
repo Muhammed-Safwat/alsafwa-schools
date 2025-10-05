@@ -1,0 +1,108 @@
+/* Example Card Component Styles using Design System */
+
+.card {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: all var(--transition-base);
+  border: 1px solid var(--border-light);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card-header {
+  padding: var(--space-6);
+  border-bottom: 1px solid var(--border-light);
+  background-color: var(--bg-secondary);
+}
+
+.card-title {
+  margin: 0 0 var(--space-2) 0;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+}
+
+.card-subtitle {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--text-tertiary);
+  font-weight: var(--font-weight-medium);
+}
+
+.card-body {
+  padding: var(--space-6);
+}
+
+.card-text {
+  margin: 0 0 var(--space-6) 0;
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+  font-size: var(--font-size-base);
+}
+
+.card-actions {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.card-footer {
+  padding: var(--space-4) var(--space-6);
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-light);
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .card-header,
+  .card-body,
+  .card-footer {
+    padding: var(--space-4);
+  }
+
+  .card-actions {
+    flex-direction: column;
+  }
+
+  .card-actions .btn {
+    width: 100%;
+  }
+}
+
+/* RTL Support */
+[dir="rtl"] .card-actions {
+  flex-direction: row-reverse;
+}
+
+/* Dark Theme Support */
+.theme-dark .card {
+  background-color: var(--bg-surface);
+  border-color: var(--border-light);
+}
+
+.theme-dark .card-header,
+.theme-dark .card-footer {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-light);
+}
+
+/* High Contrast Theme Support */
+.theme-high-contrast .card {
+  border: 2px solid var(--border-strong);
+}
+
+.theme-high-contrast .card:hover {
+  border-color: var(--text-primary);
+}

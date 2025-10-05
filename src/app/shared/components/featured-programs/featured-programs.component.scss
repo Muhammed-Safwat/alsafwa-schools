@@ -1,0 +1,191 @@
+/*--------------------------------------------------------------
+# Featured Programs Section
+--------------------------------------------------------------*/
+.featured-programs .isotope-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.featured-programs .isotope-filters li {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 50px;
+  background-color: color-mix(in srgb, var(--heading-color), transparent 90%);
+  transition: all 0.3s ease;
+}
+
+.featured-programs .isotope-filters li:hover,
+.featured-programs .isotope-filters li.filter-active {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.featured-programs .program-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+  background-color: var(--surface-color);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.featured-programs .program-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.featured-programs .program-item:hover .program-btn i {
+  transform: translateX(5px);
+}
+
+.featured-programs .program-item:hover .program-image-wrapper img {
+  transform: scale(1.1);
+}
+
+.featured-programs .program-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.featured-programs .program-image-wrapper {
+  height: 100%;
+  overflow: hidden;
+}
+
+.featured-programs .program-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.featured-programs .program-content {
+  padding: 25px 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-programs .program-content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.featured-programs .program-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-bottom: 15px;
+}
+
+.featured-programs .program-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.featured-programs .program-highlights span {
+  font-size: 0.8rem;
+  color: color-mix(in srgb, var(--heading-color), transparent 30%);
+  display: flex;
+  align-items: center;
+}
+
+.featured-programs .program-highlights span i {
+  margin-inline-end: 5px;
+  color: var(--accent-color);
+  font-size: 0.9rem;
+}
+
+.featured-programs .program-btn {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.featured-programs .program-btn span {
+  position: relative;
+}
+
+.featured-programs .program-btn span:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.featured-programs .program-btn i {
+  transition: transform 0.3s ease;
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+.featured-programs .program-btn:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+.featured-programs .program-btn:hover span:after {
+  width: 100%;
+}
+
+.featured-programs .swiper-wrapper {
+  height: auto !important;
+}
+
+@media (max-width: 992px) {
+  .featured-programs .isotope-filters {
+    margin-bottom: 30px;
+  }
+
+  .featured-programs .isotope-filters li {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-programs .program-image-wrapper {
+    height: 200px;
+  }
+
+  .featured-programs .program-content {
+    padding: 20px 15px;
+  }
+
+  .featured-programs .program-content h3 {
+    font-size: 1.15rem;
+  }
+
+  .featured-programs .program-highlights {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

@@ -1,14 +1,15 @@
 import {
   HttpClient
-} from "./chunk-RRHINRSL.js";
-import "./chunk-BPEIKMNN.js";
+} from "./chunk-4MJ6SURH.js";
+import "./chunk-UWI4XMA2.js";
 import {
   Inject,
   Injectable,
   setClassMetadata,
   ɵɵdefineInjectable,
   ɵɵinject
-} from "./chunk-STDP6IXA.js";
+} from "./chunk-OLJ2W2BP.js";
+import "./chunk-S35MAB2V.js";
 
 // node_modules/@ngx-translate/http-loader/fesm2022/ngx-translate-http-loader.mjs
 var TranslateHttpLoader = class _TranslateHttpLoader {
