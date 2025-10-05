@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 export const pagesRoutes: Routes = [
   {
@@ -7,14 +8,42 @@ export const pagesRoutes: Routes = [
   },
   {
     path: 'about',
-    loadComponent: () => import('../shared/components/about/about.component').then(m => m.AboutComponent)
+    loadComponent: () => import('./about/about.component').then(m => m.AboutComponent)
   },
   {
     path: 'contact',
-    loadComponent: () => import('../shared/components/contact/contact.component').then(m => m.ContactComponent)
+    loadComponent: () => import('./contact/contact.component').then(m => m.ContactComponent)
+  },
+  {
+    path: 'admissions',
+    loadComponent: () => import('./admissions/admissions.component').then(m => m.AdmissionsComponent)
+  },
+  {
+    path: 'faculty',
+    loadComponent: () => import('./faculty/faculty.component').then(m => m.FacultyComponent)
+  },
+  {
+    path: 'institutes',
+    loadComponent: () => import('./faculty/faculty.component').then(m => m.FacultyComponent)
+  },
+  {
+    path: 'research',
+    loadComponent: () => import('./faculty/faculty.component').then(m => m.FacultyComponent)
+  },
+  {
+    path: 'distance-learning',
+    loadComponent: () => import('./faculty/faculty.component').then(m => m.FacultyComponent)
+  },
+  {
+    path: 'terms-of-service',
+    loadComponent: () => import('./terms-of-service/terms-of-service.component').then(m => m.TermsOfServiceComponent)
+  },
+  {
+    path: 'privacy',
+    loadComponent: () => import('./privacy/privacy.component').then(m => m.PrivacyComponent)
   },
   {
     path: '**',
-    redirectTo: ''
+    loadComponent : () => import('./error-page/error-page.component').then(m => m.ErrorPageComponent)
   }
 ];

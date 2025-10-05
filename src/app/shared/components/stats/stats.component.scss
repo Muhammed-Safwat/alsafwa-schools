@@ -1,6 +1,8 @@
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
+
+
 .stats .stats-overview {
   height: 100%;
   display: flex;
@@ -121,7 +123,7 @@
 .stats .achievements-gallery .achievement-item .achievement-content {
   position: absolute;
   bottom: 0;
-  left: 0;
+  inset-inline-start: 0;
   width: 100%;
   padding: 1.5rem;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);

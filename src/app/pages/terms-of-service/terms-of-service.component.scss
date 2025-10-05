@@ -1,0 +1,387 @@
+/*--------------------------------------------------------------
+# Terms Of Service Section
+--------------------------------------------------------------*/
+.terms-of-service .terms-hero {
+  text-align: center;
+  margin-bottom: 70px;
+  padding: 60px 0;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 97%) 0%, color-mix(in srgb, var(--accent-color), transparent 98%) 100%);
+  border-radius: 30px;
+}
+
+.terms-of-service .terms-hero .badge {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: var(--surface-color);
+  border-radius: 30px;
+  color: var(--accent-color);
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+.terms-of-service .terms-hero h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  background: linear-gradient(45deg, var(--heading-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.terms-of-service .terms-hero p {
+  font-size: 1.2rem;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.terms-of-service .terms-hero .terms-highlights {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media (max-width: 576px) {
+  .terms-of-service .terms-hero .terms-highlights {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+.terms-of-service .terms-hero .terms-highlights .highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 25px;
+  background-color: var(--surface-color);
+  border-radius: 15px;
+}
+
+.terms-of-service .terms-hero .terms-highlights .highlight-item i {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+}
+
+.terms-of-service .terms-hero .terms-highlights .highlight-item span {
+  font-weight: 500;
+}
+
+.terms-of-service .terms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 991px) {
+  .terms-of-service .terms-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .terms-of-service .terms-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.terms-of-service .terms-grid .terms-card {
+  background-color: var(--surface-color);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.terms-of-service .terms-grid .terms-card:hover {
+  transform: translateY(-10px);
+}
+
+.terms-of-service .terms-grid .terms-card:hover .header-icon {
+  transform: scale(1.1);
+  background-color: var(--accent-color);
+}
+
+.terms-of-service .terms-grid .terms-card:hover .header-icon i {
+  color: var(--contrast-color);
+}
+
+.terms-of-service .terms-grid .terms-card .card-header {
+  padding: 30px;
+  text-align: center;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.terms-of-service .terms-grid .terms-card .card-header .header-icon {
+  width: 60px;
+  height: 60px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  transition: all 0.3s;
+}
+
+.terms-of-service .terms-grid .terms-card .card-header .header-icon i {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  transition: color 0.3s;
+}
+
+.terms-of-service .terms-grid .terms-card .card-header h3 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.terms-of-service .terms-grid .terms-card .card-content {
+  padding: 30px;
+}
+
+.terms-of-service .terms-grid .terms-card .card-content p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.terms-of-service .terms-grid .terms-card .card-content .check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.terms-of-service .terms-grid .terms-card .card-content .check-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.terms-of-service .terms-grid .terms-card .card-content .check-list li:last-child {
+  margin-bottom: 0;
+}
+
+.terms-of-service .terms-grid .terms-card .card-content .check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}
+
+.terms-of-service .terms-grid .terms-card .card-content .restrictions-list {
+  display: grid;
+  gap: 15px;
+}
+
+.terms-of-service .terms-grid .terms-card .card-content .restrictions-list .restriction-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.terms-of-service .terms-grid .terms-card .card-content .restrictions-list .restriction-item i {
+  color: #dc3545;
+  font-size: 1.1rem;
+}
+
+.terms-of-service .terms-grid .terms-card .card-content .restrictions-list .restriction-item span {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  font-size: 0.95rem;
+}
+
+.terms-of-service .terms-points {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.terms-of-service .terms-points h3 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.terms-of-service .terms-points .points-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 991px) {
+  .terms-of-service .terms-points .points-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .terms-of-service .terms-points .points-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.terms-of-service .terms-points .point-item {
+  background-color: var(--surface-color);
+  border-radius: 20px;
+  padding: 30px;
+  transition: transform 0.3s;
+}
+
+.terms-of-service .terms-points .point-item:hover {
+  transform: translateY(-5px);
+}
+
+.terms-of-service .terms-points .point-item:hover .point-icon {
+  background-color: var(--accent-color);
+}
+
+.terms-of-service .terms-points .point-item:hover .point-icon i {
+  color: var(--contrast-color);
+}
+
+.terms-of-service .terms-points .point-item .point-icon {
+  width: 50px;
+  height: 50px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  transition: all 0.3s;
+}
+
+.terms-of-service .terms-points .point-item .point-icon i {
+  font-size: 1.3rem;
+  color: var(--accent-color);
+  transition: color 0.3s;
+}
+
+.terms-of-service .terms-points .point-item .point-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.terms-of-service .terms-points .point-item .point-content p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.terms-of-service .terms-notices {
+  margin-bottom: 70px;
+}
+
+.terms-of-service .terms-notices .notice-wrapper {
+  background-color: var(--surface-color);
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.terms-of-service .terms-notices .notice-items {
+  display: grid;
+  gap: 25px;
+}
+
+.terms-of-service .terms-notices .notice-items .notice-item {
+  display: flex;
+  gap: 20px;
+  padding: 25px;
+  background-color: var(--background-color);
+  border-radius: 15px;
+}
+
+.terms-of-service .terms-notices .notice-items .notice-item .notice-marker {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.terms-of-service .terms-notices .notice-items .notice-item .notice-marker i {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+}
+
+.terms-of-service .terms-notices .notice-items .notice-item .notice-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.terms-of-service .terms-notices .notice-items .notice-item .notice-content p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.terms-of-service .terms-contact .contact-wrapper {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 95%) 0%, color-mix(in srgb, var(--accent-color), transparent 98%) 100%);
+  border-radius: 30px;
+  padding: 50px;
+  text-align: center;
+}
+
+.terms-of-service .terms-contact .contact-wrapper .contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.terms-of-service .terms-contact .contact-wrapper .contact-content .contact-text {
+  margin-bottom: 30px;
+}
+
+.terms-of-service .terms-contact .contact-wrapper .contact-content .contact-text h4 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.terms-of-service .terms-contact .contact-wrapper .contact-content .contact-text p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.terms-of-service .terms-contact .contact-wrapper .contact-content .contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 576px) {
+  .terms-of-service .terms-contact .contact-wrapper .contact-content .contact-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.terms-of-service .terms-contact .contact-wrapper .contact-content .contact-actions a {
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.terms-of-service .terms-contact .contact-wrapper .contact-content .contact-actions .btn-primary {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.terms-of-service .terms-contact .contact-wrapper .contact-content .contact-actions .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.terms-of-service .terms-contact .contact-wrapper .contact-content .contact-actions .btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.terms-of-service .terms-contact .contact-wrapper .contact-content .contact-actions .btn-outline:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}

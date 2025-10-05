@@ -1,7 +1,7 @@
 <header id="header"
         class="header d-flex align-items-center">
   <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-    <a href="index.html"
+    <a routerLink="/ar"
        class="logo gap-2 d-flex align-items-center">
       <img src="/assets/img/Safwat-Al-Safwa-International-University.png"
            alt="Safwat Al Safwa International University">
@@ -10,16 +10,24 @@
     <nav id="navmenu"
          class="navmenu">
       <ul>
-        <li><a href="index.html"
-             class="active">الصفحة الرئيسية</a></li>
-        <li><a href="index.html">عن الجامعة</a></li>
-        <li><a href="index.html">القبول<i class="bi bi-chevron-down toggle-dropdown"></i></a></li>
-        <li><a href="index.html">الكليات<i class="bi bi-chevron-down toggle-dropdown"></i></a></li>
-        <li><a href="index.html">المعاهد<i class="bi bi-chevron-down toggle-dropdown"></i></a></li>
-        <li><a href="index.html">مركز البحوث والدراسات</a></li>
-        <li><a href="index.html">التعلم عن بعد</a></li>
+        <li><a routerLink="/ar"
+             routerLinkActive="active"
+             [routerLinkActiveOptions]="{exact: true}">الصفحة الرئيسية</a></li>
+        <li><a routerLink="/ar/about"
+             routerLinkActive="active">عن الجامعة</a></li>
+        <li><a routerLink="/ar/admissions"
+             routerLinkActive="active">القبول</a></li>
+        <li><a routerLink="/ar/faculty"
+             routerLinkActive="active">الكليات</a></li>
+        <li><a routerLink="/ar/institutes"
+             routerLinkActive="active">المعاهد</a></li>
+        <li><a routerLink="/ar/research"
+             routerLinkActive="active">مركز البحوث والدراسات</a></li>
+        <li><a routerLink="/ar/distance-learning"
+             routerLinkActive="active">التعلم عن بعد</a></li>
         <li class="dropdown">
-          <a href="#"><span>اتصل بنا</span> </a>
+          <a routerLink="/ar/contact"
+             routerLinkActive="active"><span>اتصل بنا</span> </a>
         </li>
       </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>

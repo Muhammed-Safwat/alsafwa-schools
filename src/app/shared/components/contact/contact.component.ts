@@ -1,16 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
+
 @Component({
-  selector: 'app-contact',
+  selector: 'app-contact-section',
   standalone: true,
-  imports: [CommonModule, TranslateModule ],
+  imports: [CommonModule],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
 
-  ngOnInit() {
+  constructor() { }
 
+  ngOnInit(): void {
   }
+
 }

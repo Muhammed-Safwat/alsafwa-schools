@@ -54,7 +54,7 @@
 .featured-programs .program-badge {
   position: absolute;
   top: 15px;
-  right: 15px;
+  inset-inline-end: 15px;
   background-color: var(--accent-color);
   color: var(--contrast-color);
   font-size: 0.75rem;
@@ -137,7 +137,7 @@
   width: 0;
   height: 2px;
   bottom: -4px;
-  left: 0;
+  inset-inline-start: 0;
   background-color: var(--accent-color);
   transition: width 0.3s ease;
 }

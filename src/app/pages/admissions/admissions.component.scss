@@ -1,0 +1,314 @@
+/*--------------------------------------------------------------
+# Admissions Section
+--------------------------------------------------------------*/
+.admissions h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.admissions h2:after {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  bottom: -10px;
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-color);
+}
+
+.admissions h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.admissions h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.admissions p {
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
+.admissions .admissions-steps .steps-wrapper {
+  position: relative;
+}
+
+.admissions .admissions-steps .steps-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  inset-inline-start: 19px;
+  width: 2px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 80%);
+  z-index: 0;
+}
+
+.admissions .admissions-steps .step-item {
+  display: flex;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.admissions .admissions-steps .step-item:last-child {
+  margin-bottom: 0;
+}
+
+.admissions .admissions-steps .step-item .step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-inline-end: 1.5rem;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.admissions .admissions-steps .step-item .step-content {
+  padding-top: 0.25rem;
+}
+
+.admissions .deadlines .deadline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.admissions .deadlines .deadline-item {
+  background-color: var(--surface-color);
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-top: 3px solid var(--accent-color);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.admissions .deadlines .deadline-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.admissions .deadlines .deadline-item h4 {
+  margin-bottom: 0.75rem;
+}
+
+.admissions .deadlines .deadline-item .date {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.admissions .admissions-requirements {
+  background-color: var(--surface-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.admissions .admissions-requirements .requirements-list {
+  margin-top: 1.5rem;
+}
+
+.admissions .admissions-requirements .requirement-item {
+  display: flex;
+  margin-bottom: 1.75rem;
+}
+
+.admissions .admissions-requirements .requirement-item:last-child {
+  margin-bottom: 0;
+}
+
+.admissions .admissions-requirements .requirement-item .icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline-end: 1rem;
+  flex-shrink: 0;
+}
+
+.admissions .admissions-requirements .requirement-item .icon-box i {
+  font-size: 1.25rem;
+}
+
+.admissions .request-info .card {
+  background-color: var(--surface-color);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.admissions .request-info .card .card-body {
+  padding: 2rem;
+}
+
+.admissions .request-info .card .card-title {
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.admissions .request-info .card .card-title:after {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--accent-color);
+}
+
+.admissions .request-info .form-control,
+.admissions .request-info .form-select {
+  color: var(--default-color);
+  background-color: var(--surface-color);
+  font-size: 14px;
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+}
+
+.admissions .request-info .form-control:focus,
+.admissions .request-info .form-select:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--accent-color), transparent 90%);
+}
+
+.admissions .request-info .form-control::placeholder,
+.admissions .request-info .form-select::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.admissions .request-info .btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  color: var(--contrast-color);
+}
+
+.admissions .request-info .btn-primary:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.admissions .cta-wrapper {
+  margin-top: 4rem;
+}
+
+.admissions .cta-wrapper .cta-item {
+  padding: 2.5rem;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.admissions .cta-wrapper .cta-item:hover {
+  transform: translateY(-5px);
+}
+
+.admissions .cta-wrapper .cta-item i {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
+}
+
+.admissions .cta-wrapper .cta-item h3 {
+  margin-bottom: 1rem;
+}
+
+.admissions .cta-wrapper .cta-item p {
+  margin-bottom: 1.5rem;
+}
+
+.admissions .cta-wrapper .cta-item .btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.admissions .cta-wrapper .cta-item.tour {
+  background-color: color-mix(in srgb, var(--heading-color), transparent 90%);
+  border-radius: 8px 0 0 8px;
+}
+
+.admissions .cta-wrapper .cta-item.tour .btn-secondary {
+  background-color: var(--heading-color);
+  border-color: var(--heading-color);
+  color: var(--contrast-color);
+}
+
+.admissions .cta-wrapper .cta-item.tour .btn-secondary:hover {
+  background-color: color-mix(in srgb, var(--heading-color), transparent 20%);
+  border-color: color-mix(in srgb, var(--heading-color), transparent 20%);
+}
+
+.admissions .cta-wrapper .cta-item.apply {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border-radius: 0 8px 8px 0;
+}
+
+.admissions .cta-wrapper .cta-item.apply .btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.admissions .cta-wrapper .cta-item.apply .btn-primary:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+@media (max-width: 991px) {
+  .admissions h2 {
+    font-size: 2rem;
+  }
+
+  .admissions h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .admissions .cta-wrapper .cta-item.tour {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .admissions .cta-wrapper .cta-item.apply {
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .admissions .deadlines .deadline-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admissions .requirement-item {
+    flex-direction: column;
+  }
+
+  .admissions .requirement-item .icon-box {
+    margin-bottom: 1rem;
+    margin-inline-end: 0;
+  }
+
+  .admissions .cta-item {
+    padding: 2rem 1.5rem;
+  }
+}

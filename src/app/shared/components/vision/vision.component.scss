@@ -1,0 +1,139 @@
+// Vision Section Styles
+.vision {
+  padding: 80px 0;
+  background: #ffffff;
+
+  .section-title {
+    margin-bottom: 60px;
+
+    h2 {
+      color: #2c3e50;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #6c757d;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+  }
+
+  .vision-card {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      inset-inline-start: 0;
+      inset-inline-end: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #007bff, #28a745);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    &.primary {
+      background: linear-gradient(135deg, #007bff, #28a745);
+      color: #ffffff;
+
+      .vision-icon {
+        background: rgba(255, 255, 255, 0.2);
+
+        i {
+          color: #ffffff;
+        }
+      }
+
+      h3, p {
+        color: #ffffff;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      border-color: #007bff;
+
+      &::before {
+        transform: scaleX(1);
+      }
+
+      .vision-icon {
+        transform: scale(1.1);
+      }
+    }
+
+    .vision-icon {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 20px;
+      background: linear-gradient(135deg, #007bff, #28a745);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+
+      i {
+        font-size: 1.8rem;
+        color: #ffffff;
+        transition: all 0.3s ease;
+      }
+    }
+
+    h3 {
+      color: #2c3e50;
+      font-weight: 600;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    p {
+      color: #6c757d;
+      line-height: 1.6;
+      margin: 0;
+      font-size: 0.95rem;
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .vision {
+    padding: 60px 0;
+
+    .vision-card {
+      padding: 25px 20px;
+      margin-bottom: 20px;
+
+      .vision-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+
+        i {
+          font-size: 1.5rem;
+        }
+      }
+
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

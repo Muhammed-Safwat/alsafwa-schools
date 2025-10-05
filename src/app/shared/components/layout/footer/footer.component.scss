@@ -73,7 +73,7 @@
 }
 
 .footer .footer-links ul i {
-  padding-right: 2px;
+  padding-inline-end: 2px;
   font-size: 12px;
   line-height: 0;
 }
@@ -102,12 +102,12 @@
   margin-bottom: 5px;
 }
 
-.footer .copyright {
+.footer .copyinset-inline-end {
   padding: 25px 0;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
-.footer .copyright p {
+.footer .copyinset-inline-end p {
   margin-bottom: 0;
 }
 
@@ -132,7 +132,7 @@
   content: "";
   position: fixed;
   top: calc(50% - 30px);
-  left: calc(50% - 30px);
+  inset-inline-start: calc(50% - 30px);
   border: 6px solid #ffffff;
   border-color: var(--accent-color) transparent var(--accent-color) transparent;
   border-radius: 50%;

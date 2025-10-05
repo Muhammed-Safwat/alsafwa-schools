@@ -5,7 +5,7 @@ export interface CompanyInfo {
   email: string;
   phone: string;
   address: string;
-  copyright: string;
+  copyinset-inline-end: string;
   developedBy: string;
   poweredBy: string;
 }

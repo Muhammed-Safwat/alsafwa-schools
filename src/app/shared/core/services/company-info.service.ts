@@ -19,7 +19,7 @@ export class CompanyInfoService {
         'company.email',
         'company.phone',
         'company.address',
-        'company.copyright',
+        'company.copyinset-inline-end',
         'company.developed_by',
         'company.powered_by'
       ]).subscribe(translations => {
@@ -30,7 +30,7 @@ export class CompanyInfoService {
           email: translations['company.email'],
           phone: translations['company.phone'],
           address: translations['company.address'],
-          copyright: translations['company.copyright'],
+          copyinset-inline-end: translations['company.copyinset-inline-end'],
           developedBy: translations['company.developed_by'],
           poweredBy: translations['company.powered_by']
         };
@@ -60,11 +60,11 @@ export class CompanyInfoService {
     });
   }
 
-  getCopyrightText(): Observable<string> {
+  getCopyinset-inline-endText(): Observable<string> {
     return new Observable(observer => {
-      this.translate.get(['company.copyright', 'company.name']).subscribe(translations => {
-        const copyrightText = `${translations['company.copyright']} © ${new Date().getFullYear()} ${translations['company.name']}`;
-        observer.next(copyrightText);
+      this.translate.get(['company.copyinset-inline-end', 'company.name']).subscribe(translations => {
+        const copyinset-inline-endText = `${translations['company.copyinset-inline-end']} © ${new Date().getFullYear()} ${translations['company.name']}`;
+        observer.next(copyinset-inline-endText);
         observer.complete();
       });
     });

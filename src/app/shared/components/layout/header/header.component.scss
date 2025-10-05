@@ -93,7 +93,7 @@
   }
 
   .navmenu li:last-child a {
-    padding-right: 0;
+    padding-inline-end: 0;
   }
 
   .navmenu li:hover>a,
@@ -109,7 +109,7 @@
     display: block;
     position: absolute;
     visibility: hidden;
-    left: 14px;
+    inset-inline-start: 14px;
     top: 130%;
     opacity: 0;
     transition: 0.3s;
@@ -147,14 +147,14 @@
 
   .navmenu .dropdown .dropdown ul {
     top: 0;
-    left: -90%;
+    inset-inline-start: -90%;
     visibility: hidden;
   }
 
   .navmenu .dropdown .dropdown:hover>ul {
     opacity: 1;
     top: 0;
-    left: -100%;
+    inset-inline-start: -100%;
     visibility: visible;
   }
 }
@@ -268,7 +268,7 @@
     position: absolute;
     font-size: 32px;
     top: 15px;
-    right: 15px;
+    inset-inline-end: 15px;
     margin-inline-ende-end: 0;
     z-index: 9999;
   }
@@ -304,13 +304,13 @@
 }
 
 [dir="rtl"] .navmenu .dropdown ul {
-  right: 14px;
-  left: auto;
+  inset-inline-end: 14px;
+  inset-inline-start: auto;
 }
 
 [dir="rtl"] .navmenu .dropdown .dropdown ul {
-  right: 100%;
-  left: auto;
+  inset-inline-end: 100%;
+  inset-inline-start: auto;
 }
 
 /* Mobile RTL */

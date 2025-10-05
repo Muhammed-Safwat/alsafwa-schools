@@ -42,7 +42,7 @@
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  inset-inline-end: 15px;
   bottom: 15px;
   z-index: 99999;
   background-color: var(--accent-color);
@@ -107,12 +107,12 @@
 }
 
 .page-title .breadcrumbs ol li+li {
-  padding-left: 10px;
+  padding-inset-inline-start: 10px;
 }
 
 .page-title .breadcrumbs ol li+li::before {
   content: "/";
   display: inline-block;
-  padding-right: 10px;
+  padding-inline-end: 10px;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
