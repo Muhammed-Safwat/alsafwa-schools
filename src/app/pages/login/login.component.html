@@ -1,0 +1,100 @@
+
+<!-- Login Section -->
+<section id="login" class="login section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8">
+        <div class="login-card">
+          <div class="login-header">
+            <h3>مرحباً بك</h3>
+            <p>سجل دخولك للوصول إلى حسابك</p>
+          </div>
+
+          <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="form-group mb-4">
+              <label for="email" class="form-label">البريد الإلكتروني</label>
+              <div class="input-group">
+
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  formControlName="email"
+                  placeholder="أدخل بريدك الإلكتروني"
+                  [class.is-invalid]="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+                  <span class="input-group-text">
+                    <i class="bi bi-envelope"></i>
+                  </span>
+                <div class="invalid-feedback" *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+                  <span *ngIf="loginForm.get('email')?.errors?.['required']">البريد الإلكتروني مطلوب</span>
+                  <span *ngIf="loginForm.get('email')?.errors?.['email']">أدخل بريد إلكتروني صحيح</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group mb-4">
+              <label for="password" class="form-label">كلمة المرور</label>
+              <div class="input-group">
+                  <button type="button"
+                          class="btn btn-outline-secondary"
+                          (click)="togglePassword()">
+                    <i class="bi"
+                       [class.bi-eye]="!showPassword"
+                       [class.bi-eye-slash]="showPassword"></i>
+                  </button>
+                <input
+                  [type]="showPassword ? 'text' : 'password'"
+                  class="form-control"
+                  id="password"
+                  formControlName="password"
+                  placeholder="أدخل كلمة المرور"
+                  [class.is-invalid]="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+                <span class="input-group-text">
+                  <i class="bi bi-lock"></i>
+                </span>
+
+                <div class="invalid-feedback" *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+                  <span *ngIf="loginForm.get('password')?.errors?.['required']">كلمة المرور مطلوبة</span>
+                  <span *ngIf="loginForm.get('password')?.errors?.['minlength']">كلمة المرور يجب أن تكون 6 أحرف على الأقل</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group mb-4">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="rememberMe"
+                  formControlName="rememberMe">
+                <label class="form-check-label" for="rememberMe">
+                  تذكرني
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group mb-4">
+              <button
+                type="submit"
+                class="btn btn-primary w-100"
+                [disabled]="loginForm.invalid || isLoading">
+                <span *ngIf="!isLoading">
+                  <i class="bi bi-box-arrow-in-right me-2"></i>
+                  تسجيل الدخول
+                </span>
+                <span *ngIf="isLoading">
+                  <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                  جاري تسجيل الدخول...
+                </span>
+              </button>
+            </div>
+
+            <div class="form-group text-center">
+              <a href="#" class="forgot-password-link">نسيت كلمة المرور؟</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

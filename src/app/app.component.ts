@@ -3,8 +3,8 @@ import { RouterOutlet, NavigationEnd, Router } from '@angular/router';
 import { PreloaderComponent } from './shared/components/preloader/preloader.component';
 import { filter } from 'rxjs/operators';
 
-declare var PureCounter: any;
 declare var AOS: any;
+declare var PureCounter: any;
 
 @Component({
   selector: 'app-root',
@@ -79,4 +79,6 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
       AOS.refresh();
     }
   }
+
+
 }

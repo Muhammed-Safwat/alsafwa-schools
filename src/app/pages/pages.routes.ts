@@ -24,15 +24,15 @@ export const pagesRoutes: Routes = [
   },
   {
     path: 'institutes',
-    loadComponent: () => import('./faculty/faculty.component').then(m => m.FacultyComponent)
+    loadComponent: () => import('./institutes/institutes.component').then(m => m.InstitutesComponent)
   },
   {
     path: 'research',
-    loadComponent: () => import('./faculty/faculty.component').then(m => m.FacultyComponent)
+    loadComponent: () => import('./resarch-center/resarch-center.component').then(m => m.ResarchCenterComponent)
   },
   {
-    path: 'distance-learning',
-    loadComponent: () => import('./faculty/faculty.component').then(m => m.FacultyComponent)
+    path: 'remote-learning',
+    loadComponent: () => import('./remote-learning/remote-learning.component').then(m => m.RemoteLearningComponent)
   },
   {
     path: 'terms-of-service',
@@ -41,6 +41,10 @@ export const pagesRoutes: Routes = [
   {
     path: 'privacy',
     loadComponent: () => import('./privacy/privacy.component').then(m => m.PrivacyComponent)
+  },
+  {
+    path: 'login',
+    loadComponent: () => import('./login/login.component').then(m => m.LoginComponent)
   },
   {
     path: '**',

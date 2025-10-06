@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { FooterComponent } from "../../shared/components/layout/footer/footer.component";
 import { PageTitleComponent } from "../../shared/components/page-title/page-title.component";
 import { HeaderComponent } from "../../shared/components/layout/header/header.component";
+
+declare var AOS: any;
 
 @Component({
   selector: 'app-faculty',
@@ -9,6 +11,13 @@ import { HeaderComponent } from "../../shared/components/layout/header/header.co
   templateUrl: './faculty.component.html',
   styleUrl: './faculty.component.scss'
 })
-export class FacultyComponent {
+export class FacultyComponent implements AfterViewInit {
 
+  ngAfterViewInit() {
+    setTimeout(() => {
+      if (typeof AOS !== 'undefined') {
+        AOS.refresh();
+      }
+    }, 100);
+  }
 }

@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
+
+declare var AOS: any;
 
 @Component({
   selector: 'app-error-page',
@@ -7,6 +9,12 @@ import { RouterModule } from '@angular/router';
   templateUrl: './error-page.component.html',
   styleUrl: './error-page.component.scss'
 })
-export class ErrorPageComponent {
-
+export class ErrorPageComponent implements AfterViewInit {
+  ngAfterViewInit() {
+    setTimeout(() => {
+      if (typeof AOS !== 'undefined') {
+        AOS.refresh();
+      }
+    }, 100);
+  }
 }
