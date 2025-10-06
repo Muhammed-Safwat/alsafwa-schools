@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-featured-programs',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './featured-programs.component.html',
   styleUrl: './featured-programs.component.scss'
 })

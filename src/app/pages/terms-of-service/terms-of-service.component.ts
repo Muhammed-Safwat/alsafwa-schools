@@ -1,4 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { HeaderComponent } from '../../shared/components/layout/header/header.component';
 import { FooterComponent } from '../../shared/components/layout/footer/footer.component';
 import { PageTitleComponent } from '../../shared/components/page-title/page-title.component';
@@ -7,7 +8,7 @@ declare var AOS: any;
 
 @Component({
   selector: 'app-terms-of-service',
-  imports: [HeaderComponent, FooterComponent, PageTitleComponent],
+  imports: [RouterModule, HeaderComponent, FooterComponent, PageTitleComponent],
   templateUrl: './terms-of-service.component.html',
   styleUrl: './terms-of-service.component.scss'
 })

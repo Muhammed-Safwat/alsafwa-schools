@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-example-card',
+  imports: [RouterModule],
   templateUrl: './example-card.component.html',
   styleUrls: ['./example-card.component.scss']
 })
