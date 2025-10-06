@@ -13,9 +13,6 @@ declare var AOS: any;
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    HeaderComponent,
-    FooterComponent,
-    PageTitleComponent
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'

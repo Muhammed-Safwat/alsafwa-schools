@@ -18,7 +18,6 @@ import { InstitutesComponent } from '../institutes/institutes.component';
     FooterComponent,
     PageTitleComponent,
     HistoryComponent,
-    InstitutesComponent,
     StatsComponent
 ],
   templateUrl: './about.component.html',
