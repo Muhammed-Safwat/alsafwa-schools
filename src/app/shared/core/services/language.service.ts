@@ -13,6 +13,7 @@ export class LanguageService {
   }
 
   changeLanguage(lang: ISupportedLanguages): void {
+    console.log('LanguageService: Changing language to:', lang);
     this.languageStore.changeLanguage(lang);
   }
 

@@ -2,10 +2,12 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-
+import { LanguageSwitcherComponent } from "../../language-switcher/language-switcher.component";
+import { AutoLanguageLinkDirective } from '../../../core/directives/auto-language-link.directive';
+ 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule, RouterModule, TranslateModule],
+  imports: [CommonModule, RouterModule, TranslateModule, LanguageSwitcherComponent, AutoLanguageLinkDirective],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

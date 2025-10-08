@@ -302,3 +302,83 @@ content: "";
     }
   }
 }
+
+// University Highlights Styles
+.university-highlights {
+   
+ 
+
+  .highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+  }
+
+  .highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+      border-left-color: #007bff;
+    }
+
+    i {
+      font-size: 1.4rem;
+      color: #007bff;
+      min-width: 24px;
+      text-align: center;
+    }
+
+    span {
+      color: #495057;
+      font-size: 0.9rem;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+        & {
+          i {
+            color: #28a745;
+          }
+    
+          &:hover {
+            border-left-color: #28a745;
+          }
+        }
+  }
+}
+
+// RTL Support
+[dir="rtl"] {
+  .university-highlights {
+    .highlight-item {
+      border-left: none;
+      border-right: 4px solid transparent;
+
+      &:hover {
+        border-left: none;
+        border-right-color: #007bff;
+      }
+
+      &:nth-child(1):hover { border-right-color: #ffc107; }
+      &:nth-child(2):hover { border-right-color: #28a745; }
+      &:nth-child(3):hover { border-right-color: #dc3545; }
+      &:nth-child(4):hover { border-right-color: #6f42c1; }
+    }
+  }
+}
+ 

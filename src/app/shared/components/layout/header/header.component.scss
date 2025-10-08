@@ -493,9 +493,15 @@ body {
   text-align: center;
 }
 
+.others-option.outer-option{
+  @media screen and (max-width: 1199px) {
+    display: none !important;
+  }
+}
 
-.others-option{
-  @media screen and (max-width: 992px) {
+
+@media screen and (min-width: 1199px) {
+  .navmenu .others-option {
     display: none !important;
   }
 }

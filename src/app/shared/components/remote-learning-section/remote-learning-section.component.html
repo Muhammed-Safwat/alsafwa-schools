@@ -3,24 +3,24 @@
   <div class="container" data-aos="fade-up" data-aos-delay="100">
     <div class="row mb-5">
       <div class="col-lg-8 mx-auto text-center">
-        <h2 class="display-6 fw-bold mb-4">التعليم عن بعد</h2>
-        <p class="lead">يتيح للطلاب من مختلف المناطق الجغرافية التعليم من خلال وسائل تعليمية حديثة؛ لتوفير فرص تعليمية مرنة للجميع بوتيرة تناسب احتياجاتهم الفردية</p>
+        <h2 class="display-6 fw-bold mb-4">{{ 'remote_learning.title' | translate }}</h2>
+        <p class="lead">{{ 'remote_learning.description' | translate }}</p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
         <div class="departments-nav">
-          <h4 class="departments-title">أنواع التعليم</h4>
+          <h4 class="departments-title">{{ 'remote_learning.learning_types' | translate }}</h4>
           <ul class="nav nav-tabs flex-column">
             <li class="nav-item">
-              <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#learning-tab-1">التعليم المتزامن</button>
+              <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#learning-tab-1">{{ 'remote_learning.synchronous_learning' | translate }}</button>
             </li>
             <li class="nav-item">
-              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#learning-tab-2">التعليم غير المتزامن</button>
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#learning-tab-2">{{ 'remote_learning.asynchronous_learning' | translate }}</button>
             </li>
             <li class="nav-item">
-              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#learning-tab-3">المزايا والفوائد</button>
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#learning-tab-3">{{ 'remote_learning.advantages_benefits' | translate }}</button>
             </li>
           </ul>
         </div>
@@ -31,34 +31,27 @@
           <!-- التعليم المتزامن -->
           <div class="tab-pane fade show active" id="learning-tab-1">
             <div class="department-info mb-4">
-              <h3>التعليم المتزامن</h3>
-              <p class="lead">محاضرات مباشرة تفاعلية من خلال فصول افتراضية عبر شبكة المعلومات العنكبوتية (الإنترنت)</p>
+              <h3>{{ 'remote_learning.synchronous_learning' | translate }}</h3>
+              <p class="lead">{{ 'remote_learning.synchronous_description' | translate }}</p>
             </div>
             <div class="row g-4">
               <div class="col-md-6">
                 <div class="institute-goals">
-                  <h5>مميزات التعليم المتزامن:</h5>
+                  <h5>{{ 'remote_learning.synchronous_features' | translate }}</h5>
                   <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>لا حاجة للانتقال للحرم الجامعي</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>يوفر الوقت ويخفض تكاليف الدراسة</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>تفاعل مباشر مع المحاضر والزملاء</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>إمكانية طرح الأسئلة والإجابة الفورية</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>مشاركة الشاشة والمواد التعليمية</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>تسجيل المحاضرات للمراجعة لاحقاً</li>
+                    <li *ngFor="let feature of 'remote_learning.synchronous_features_list' | translate" class="d-flex align-items-center mb-2">
+                      <i class="bi bi-check-circle text-primary me-2"></i>
+                      <span>{{ feature }}</span>
+                    </li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="institute-specialties">
-                  <h5>الأدوات المستخدمة:</h5>
+                  <h5>{{ 'remote_learning.tools_used' | translate }}</h5>
                   <div class="row">
                     <div class="col-12">
-                      <span class="badge bg-primary me-2 mb-2">فصول افتراضية تفاعلية</span>
-                      <span class="badge bg-primary me-2 mb-2">مؤتمرات الفيديو</span>
-                      <span class="badge bg-primary me-2 mb-2">لوحات تفاعلية رقمية</span>
-                      <span class="badge bg-primary me-2 mb-2">نظم إدارة التعلم</span>
-                      <span class="badge bg-primary me-2 mb-2">أدوات التقييم المباشر</span>
-                      <span class="badge bg-primary me-2 mb-2">منصات التواصل</span>
+                      <span *ngFor="let tool of 'remote_learning.tools_list' | translate" class="badge bg-primary me-2 mb-2">{{ tool }}</span>
                     </div>
                   </div>
                 </div>
@@ -69,34 +62,27 @@
           <!-- التعليم غير المتزامن -->
           <div class="tab-pane fade" id="learning-tab-2">
             <div class="department-info mb-4">
-              <h3>التعليم غير المتزامن</h3>
-              <p class="lead">تسجيل المحاضرات مسبقاً مما يتيح للطلاب الحصول عليها في الوقت المناسب لكل طالب والمشاركة في المناقشات</p>
+              <h3>{{ 'remote_learning.asynchronous_learning' | translate }}</h3>
+              <p class="lead">{{ 'remote_learning.asynchronous_description' | translate }}</p>
             </div>
             <div class="row g-4">
               <div class="col-md-6">
                 <div class="institute-goals">
-                  <h5>مميزات التعليم غير المتزامن:</h5>
+                  <h5>{{ 'remote_learning.asynchronous_features' | translate }}</h5>
                   <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>يدرس الطالب في الوقت المناسب له</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>مراجعة المحاضرات حسب الحاجة مما يعزز الفهم</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>مرونة كاملة في جدولة الدراسة</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>إمكانية التوقف والإعادة حسب الحاجة</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>توفير الوقت والجهد في التنقل</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>إمكانية الدراسة من أي مكان</li>
+                    <li *ngFor="let feature of 'remote_learning.asynchronous_features_list' | translate" class="d-flex align-items-center mb-2">
+                      <i class="bi bi-check-circle text-primary me-2"></i>
+                      <span>{{ feature }}</span>
+                    </li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="institute-specialties">
-                  <h5>المواد التعليمية:</h5>
+                  <h5>{{ 'remote_learning.learning_materials' | translate }}</h5>
                   <div class="row">
                     <div class="col-12">
-                      <span class="badge bg-primary me-2 mb-2">فيديوهات مسجلة</span>
-                      <span class="badge bg-primary me-2 mb-2">عروض تقديمية تفاعلية</span>
-                      <span class="badge bg-primary me-2 mb-2">ملفات صوتية</span>
-                      <span class="badge bg-primary me-2 mb-2">كتب إلكترونية</span>
-                      <span class="badge bg-primary me-2 mb-2">اختبارات ذاتية</span>
-                      <span class="badge bg-primary me-2 mb-2">منتديات النقاش</span>
+                      <span *ngFor="let material of 'remote_learning.materials_list' | translate" class="badge bg-primary me-2 mb-2">{{ material }}</span>
                     </div>
                   </div>
                 </div>
@@ -107,34 +93,27 @@
           <!-- المزايا والفوائد -->
           <div class="tab-pane fade" id="learning-tab-3">
             <div class="department-info mb-4">
-              <h3>المزايا والفوائد</h3>
-              <p class="lead">التعليم عن بعد يشجع على التعليم الذاتي والتعليم التعاوني دون الحاجة إلى التواجد في قاعات الدراسة التقليدية</p>
+              <h3>{{ 'remote_learning.advantages_benefits' | translate }}</h3>
+              <p class="lead">{{ 'remote_learning.benefits_description' | translate }}</p>
             </div>
             <div class="row g-4">
               <div class="col-md-6">
                 <div class="institute-goals">
-                  <h5>الفوائد العامة:</h5>
+                  <h5>{{ 'remote_learning.general_benefits' | translate }}</h5>
                   <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>يقلل من التكاليف المرتبطة بالتعليم التقليدي مثل السفر والإقامة</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>يوفر فرص تعليمية مرنة للجميع</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>يشجع على التعليم الذاتي والتعليم التعاوني</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>يتيح الوصول للتعليم من أي مكان في العالم</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>يناسب مختلف أنماط التعلم</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>يوفر بيئة تعليمية مريحة ومناسبة</li>
+                    <li *ngFor="let benefit of 'remote_learning.general_benefits_list' | translate" class="d-flex align-items-center mb-2">
+                      <i class="bi bi-check-circle text-primary me-2"></i>
+                      <span>{{ benefit }}</span>
+                    </li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="institute-specialties">
-                  <h5>المجالات المتاحة:</h5>
+                  <h5>{{ 'remote_learning.available_fields' | translate }}</h5>
                   <div class="row">
                     <div class="col-12">
-                      <span class="badge bg-primary me-2 mb-2">البرامج الأكاديمية</span>
-                      <span class="badge bg-primary me-2 mb-2">الدورات التدريبية</span>
-                      <span class="badge bg-primary me-2 mb-2">الشهادات المهنية</span>
-                      <span class="badge bg-primary me-2 mb-2">برامج التطوير المهني</span>
-                      <span class="badge bg-primary me-2 mb-2">الدراسات العليا</span>
-                      <span class="badge bg-primary me-2 mb-2">البرامج التخصصية</span>
+                      <span *ngFor="let field of 'remote_learning.fields_list' | translate" class="badge bg-primary me-2 mb-2">{{ field }}</span>
                     </div>
                   </div>
                 </div>

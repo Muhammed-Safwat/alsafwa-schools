@@ -1,8 +1,8 @@
 <app-header></app-header>
 <app-page-title
-  title="سياسة الخصوصية"
-  description="تعرف على سياسة الخصوصية الخاصة بالجامعة"
-  currentPage="سياسة الخصوصية">
+  [title]="'page_titles.privacy.title' | translate"
+  [description]="'page_titles.privacy.description' | translate"
+  [currentPage]="'page_titles.privacy.current_page' | translate">
 </app-page-title>
 <!-- Privacy Section -->
 <section id="privacy"
@@ -16,7 +16,7 @@
       <div class="header-content">
         <div class="last-updated">تاريخ النفاذ: ٢٧ فبراير ٢٠٢٥</div>
         <h1>سياسة الخصوصية</h1>
-        <p class="intro-text">تصف سياسة الخصوصية هذه كيفية جمعنا واستخدامنا ومعالجة وكشف معلوماتك، بما في ذلك المعلومات الشخصية، فيما يتعلق بالوصول إلى واستخدام خدمات جامعة صفوة الصفوة.</p>
+        <p class="intro-text">تصف سياسة الخصوصية هذه كيفية جمعنا واستخدامنا ومعالجة وكشف معلوماتك، بما في ذلك المعلومات الشخصية، فيما يتعلق بالوصول إلى واستخدام خدمات جامعة صفوت الصفوة.</p>
       </div>
     </div>
 
@@ -123,7 +123,7 @@
       <p>إذا كان لديك أي أسئلة حول سياسة الخصوصية هذه أو ممارساتنا، يرجى التواصل معنا:</p>
       <div class="contact-details">
         <p><strong>البريد الإلكتروني:</strong> {{'privacy@alsafwa.edu.sa'}}</p>
-        <p><strong>العنوان:</strong> جامعة صفوة الصفوة، المملكة العربية السعودية</p>
+        <p><strong>العنوان:</strong> جامعة صفوت الصفوة، المملكة العربية السعودية</p>
       </div>
     </div>
 

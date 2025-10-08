@@ -1,11 +1,14 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 declare var AOS: any;
 
 @Component({
   selector: 'app-error-page',
-  imports: [RouterModule],
+  standalone: true,
+  imports: [CommonModule, RouterModule, TranslateModule],
   templateUrl: './error-page.component.html',
   styleUrl: './error-page.component.scss'
 })

@@ -1,25 +1,24 @@
 <!-- Example Card Component using the new Design System -->
 <div class="card">
   <div class="card-header">
-    <h3 class="card-title">جامعة صفوت الصفوة الدولية</h3>
-    <p class="card-subtitle">Safwat Al-Safwa International University</p>
+    <h3 class="card-title">{{ 'example_card.university_name_ar' | translate }}</h3>
+    <p class="card-subtitle">{{ 'example_card.university_name_en' | translate }}</p>
   </div>
 
   <div class="card-body">
     <p class="card-text">
-      مرحباً بكم في جامعة صفوت الصفوة الدولية، حيث نسعى لتقديم تعليم متميز
-      يلبي احتياجات الطلاب في القرن الحادي والعشرين.
+      {{ 'example_card.welcome_text' | translate }}
     </p>
 
     <div class="card-actions">
-      <a routerLink="/ar/about" class="btn btn-primary">تعرف علينا</a>
-      <a routerLink="/ar/contact" class="btn btn-secondary">تواصل معنا</a>
+      <a appAutoLanguageLink="/about" class="btn btn-primary">{{ 'example_card.learn_more' | translate }}</a>
+      <a appAutoLanguageLink="/contact" class="btn btn-secondary">{{ 'example_card.contact_us' | translate }}</a>
     </div>
   </div>
 
   <div class="card-footer">
     <div class="card-meta">
-      <span class="text-tertiary">آخر تحديث: ديسمبر 2024</span>
+      <span class="text-tertiary">{{ 'example_card.last_update' | translate }}</span>
     </div>
   </div>
 </div>

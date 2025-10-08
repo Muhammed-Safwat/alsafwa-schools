@@ -3,21 +3,21 @@
   <div class="container" data-aos="fade-up" data-aos-delay="100">
     <div class="row mb-5">
       <div class="col-lg-8 mx-auto text-center">
-        <h2 class="display-6 fw-bold mb-4">المعاهد</h2>
-        <p class="lead">نقدم برامج تعليمية وتدريبية متخصصة تجمع بين العلم والتدريب العملي لاكتساب المهارات العملية</p>
+        <h2 class="display-6 fw-bold mb-4">{{ 'institutes.title' | translate }}</h2>
+        <p class="lead">{{ 'institutes.description' | translate }}</p>
       </div>
     </div>
 
     <div class="row">
       <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
         <div class="departments-nav">
-          <h4 class="departments-title">المعاهد</h4>
+          <h4 class="departments-title">{{ 'institutes.institutes_title' | translate }}</h4>
           <ul class="nav nav-tabs flex-column">
             <li class="nav-item">
-              <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#institute-tab-1">معهد اللغة العربية</button>
+              <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#institute-tab-1">{{ 'institutes.arabic_language_institute' | translate }}</button>
             </li>
             <li class="nav-item">
-              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#institute-tab-2">معهد العلوم التطبيقية</button>
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#institute-tab-2">{{ 'institutes.applied_sciences_institute' | translate }}</button>
             </li>
           </ul>
         </div>
@@ -28,32 +28,27 @@
           <!-- معهد اللغة العربية -->
           <div class="tab-pane fade show active" id="institute-tab-1">
             <div class="department-info mb-4">
-              <h3>معهد اللغة العربية</h3>
-              <p class="lead">مُكرس لتعليم اللغة العربية لغير الناطقين بها من خلال منهج دراسي شامل وأساليب تدريس حديثة لتطوير مهارات القراءة والكتابة والمحادثة والاستماع</p>
+              <h3>{{ 'institutes.arabic_language_institute' | translate }}</h3>
+              <p class="lead">{{ 'institutes.arabic_language_description' | translate }}</p>
             </div>
             <div class="row g-4">
               <div class="col-md-6">
                 <div class="institute-goals">
-                  <h5>أهداف المعهد:</h5>
+                  <h5>{{ 'institutes.institute_goals' | translate }}</h5>
                   <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>تطوير مهارات القراءة والكتابة والمحادثة والاستماع</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>تطوير المهارات اللغوية للطلاب</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>تعريف الطلاب بالثقافة والتقاليد العربية والإسلامية</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>استخدام أساليب تدريس حديثة ومتطورة</li>
+                    <li *ngFor="let goal of 'institutes.arabic_goals' | translate" class="d-flex align-items-center mb-2">
+                      <i class="bi bi-check-circle text-primary me-2"></i>
+                      <span>{{ goal }}</span>
+                    </li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="institute-specialties">
-                  <h5>البرامج المتاحة:</h5>
+                  <h5>{{ 'institutes.available_programs' | translate }}</h5>
                   <div class="row">
                     <div class="col-12">
-                      <span class="badge bg-primary me-2 mb-2">البرنامج الأساسي للغة العربية</span>
-                      <span class="badge bg-primary me-2 mb-2">برنامج المحادثة المتقدم</span>
-                      <span class="badge bg-primary me-2 mb-2">برنامج الكتابة الأكاديمية</span>
-                      <span class="badge bg-primary me-2 mb-2">برنامج فهم القرآن الكريم</span>
-                      <span class="badge bg-primary me-2 mb-2">برنامج الثقافة العربية</span>
-                      <span class="badge bg-primary me-2 mb-2">برنامج الإملاء والنحو</span>
+                      <span *ngFor="let program of 'institutes.arabic_programs' | translate" class="badge bg-primary me-2 mb-2">{{ program }}</span>
                     </div>
                   </div>
                 </div>
@@ -64,35 +59,27 @@
           <!-- معهد العلوم التطبيقية -->
           <div class="tab-pane fade" id="institute-tab-2">
             <div class="department-info mb-4">
-              <h3>معهد العلوم التطبيقية</h3>
-              <p class="lead">يقدم برامج تعليمية وتدريبية متخصصة تجمع بين العلم والتدريب العملي لاكتساب الطلاب مهارات عملية وإعادة تأهيل العاطلين عن العمل حسب متطلبات السوق</p>
+              <h3>{{ 'institutes.applied_sciences_institute' | translate }}</h3>
+              <p class="lead">{{ 'institutes.applied_sciences_description' | translate }}</p>
             </div>
             <div class="row g-4">
               <div class="col-md-6">
                 <div class="institute-goals">
-                  <h5>أهداف المعهد:</h5>
+                  <h5>{{ 'institutes.institute_goals' | translate }}</h5>
                   <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>توفير برامج تعليمية وتدريبية متخصصة</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>الجمع بين العلم والتدريب العملي</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>اكتساب الطلاب مهارات عملية مطلوبة</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>إعادة تأهيل العاطلين عن العمل</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>تلبية متطلبات سوق العمل</li>
+                    <li *ngFor="let goal of 'institutes.applied_sciences_goals' | translate" class="d-flex align-items-center mb-2">
+                      <i class="bi bi-check-circle text-primary me-2"></i>
+                      <span>{{ goal }}</span>
+                    </li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="institute-specialties">
-                  <h5>البرامج المتاحة:</h5>
+                  <h5>{{ 'institutes.available_programs' | translate }}</h5>
                   <div class="row">
                     <div class="col-12">
-                      <span class="badge bg-primary me-2 mb-2">برنامج الحاسوب وتقنية المعلومات</span>
-                      <span class="badge bg-primary me-2 mb-2">برنامج المحاسبة المالية</span>
-                      <span class="badge bg-primary me-2 mb-2">برنامج التسويق الرقمي</span>
-                      <span class="badge bg-primary me-2 mb-2">برنامج إدارة المشاريع</span>
-                      <span class="badge bg-primary me-2 mb-2">برنامج التصميم الجرافيكي</span>
-                      <span class="badge bg-primary me-2 mb-2">برنامج اللحام والحدادة</span>
-                      <span class="badge bg-primary me-2 mb-2">برنامج الكهرباء والإلكترونيات</span>
-                      <span class="badge bg-primary me-2 mb-2">برنامج الميكانيكا</span>
+                      <span *ngFor="let program of 'institutes.applied_sciences_programs' | translate" class="badge bg-primary me-2 mb-2">{{ program }}</span>
                     </div>
                   </div>
                 </div>

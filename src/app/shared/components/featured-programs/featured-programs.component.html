@@ -5,8 +5,8 @@
   <!-- Section Title -->
   <div class="container section-title"
        data-aos="fade-up">
-    <h2>البرامج المميزة</h2>
-    <p>تقدم جامعة الصفوة مجموعة من البرامج الأكاديمية المتميزة التي تجمع بين الجودة والمعرفة والمهارات العملية لتأهيل قادة المستقبل.</p>
+    <h2>{{ 'featured_programs.title' | translate }}</h2>
+    <p>{{ 'featured_programs.description' | translate }}</p>
   </div><!-- End Section Title -->
 
   <div class="container"
@@ -21,10 +21,10 @@
           data-aos="fade-up"
           data-aos-delay="100">
         <li data-filter="*"
-            class="filter-active">كل البرامج</li>
-        <li data-filter=".filter-bachelor">بكالوريوس</li>
-        <li data-filter=".filter-master">ماجستير</li>
-        <li data-filter=".filter-certificate">شهادات مهنية</li>
+            class="filter-active">{{ 'featured_programs.all_programs' | translate }}</li>
+        <li data-filter=".filter-bachelor">{{ 'featured_programs.bachelor' | translate }}</li>
+        <li data-filter=".filter-master">{{ 'featured_programs.master' | translate }}</li>
+        <li data-filter=".filter-certificate">{{ 'featured_programs.certificates' | translate }}</li>
       </ul>
 
       <div class="row g-4 isotope-container">
@@ -33,26 +33,26 @@
              data-aos="zoom-in"
              data-aos-delay="100">
           <div class="program-item">
-            <div class="program-badge">بكالوريوس</div>
+            <div class="program-badge">{{ 'featured_programs.bachelor' | translate }}</div>
             <div class="row g-0">
               <div class="col-md-4">
                 <div class="program-image-wrapper">
                   <img src="assets/img/education/education-1.webp"
                        class="img-fluid"
-                       alt="علوم الحاسب">
+                       [alt]="'featured_programs.computer_science_alt' | translate">
                 </div>
               </div>
               <div class="col-md-8">
                 <div class="program-content">
-                  <h3>علوم الحاسب</h3>
+                  <h3>{{ 'featured_programs.computer_science' | translate }}</h3>
                   <div class="program-highlights">
-                    <span><i class="bi bi-clock"></i> 4 سنوات</span>
-                    <span><i class="bi bi-people-fill"></i> 132 ساعة</span>
-                    <span><i class="bi bi-calendar3"></i> الفصلين</span>
+                    <span><i class="bi bi-clock"></i> 4 {{ 'featured_programs.years' | translate }}</span>
+                    <span><i class="bi bi-people-fill"></i> 132 {{ 'featured_programs.hours' | translate }}</span>
+                    <span><i class="bi bi-calendar3"></i> {{ 'featured_programs.semesters' | translate }}</span>
                   </div>
-                  <p>برنامج يركز على البرمجة، الذكاء الاصطناعي، وأمن المعلومات لتأهيل خريجين قادرين على قيادة مشاريع التحول الرقمي.</p>
-                  <a routerLink="/ar/about"
-                     class="program-btn"><span>اعرف المزيد</span> <i class="bi bi-arrow-inset-inline-end"></i></a>
+                  <p>{{ 'featured_programs.computer_science_desc' | translate }}</p>
+                  <a appAutoLanguageLink="/about"
+                     class="program-btn"><span>{{ 'featured_programs.learn_more' | translate }}</span> <i class="bi bi-arrow-inset-inline-end"></i></a>
                 </div>
               </div>
             </div>
@@ -63,26 +63,26 @@
              data-aos="zoom-in"
              data-aos-delay="200">
           <div class="program-item">
-            <div class="program-badge">بكالوريوس</div>
+            <div class="program-badge">{{ 'featured_programs.bachelor' | translate }}</div>
             <div class="row g-0">
               <div class="col-md-4">
                 <div class="program-image-wrapper">
                   <img src="assets/img/education/education-3.webp"
                        class="img-fluid"
-                       alt="إدارة الأعمال">
+                       [alt]="'featured_programs.business_management_alt' | translate">
                 </div>
               </div>
               <div class="col-md-8">
                 <div class="program-content">
-                  <h3>إدارة الأعمال</h3>
+                  <h3>{{ 'featured_programs.business_management' | translate }}</h3>
                   <div class="program-highlights">
-                    <span><i class="bi bi-clock"></i> 4 سنوات</span>
-                    <span><i class="bi bi-people-fill"></i> 128 ساعة</span>
-                    <span><i class="bi bi-calendar3"></i> الفصلين</span>
+                    <span><i class="bi bi-clock"></i> 4 {{ 'featured_programs.years' | translate }}</span>
+                    <span><i class="bi bi-people-fill"></i> 128 {{ 'featured_programs.hours' | translate }}</span>
+                    <span><i class="bi bi-calendar3"></i> {{ 'featured_programs.semesters' | translate }}</span>
                   </div>
-                  <p>برنامج يدمج بين النظريات الحديثة والتطبيق العملي لإعداد قادة ورواد أعمال قادرين على المنافسة في سوق العمل.</p>
-                  <a routerLink="/ar/about"
-                     class="program-btn"><span>اعرف المزيد</span> <i class="bi bi-arrow-inset-inline-end"></i></a>
+                  <p>{{ 'featured_programs.business_management_desc' | translate }}</p>
+                  <a appAutoLanguageLink="/about"
+                     class="program-btn"><span>{{ 'featured_programs.learn_more' | translate }}</span> <i class="bi bi-arrow-inset-inline-end"></i></a>
                 </div>
               </div>
             </div>
@@ -93,7 +93,7 @@
              data-aos="zoom-in"
              data-aos-delay="300">
           <div class="program-item">
-            <div class="program-badge">بكالوريوس</div>
+            <div class="program-badge">{{ 'featured_programs.bachelor' | translate }}</div>
             <div class="row g-0">
               <div class="col-md-4">
                 <div class="program-image-wrapper">
@@ -104,15 +104,15 @@
               </div>
               <div class="col-md-8">
                 <div class="program-content">
-                  <h3>العلوم الطبية</h3>
+                  <h3>{{ 'featured_programs.medical_sciences' | translate }}</h3>
                   <div class="program-highlights">
-                    <span><i class="bi bi-clock"></i> 5 سنوات</span>
-                    <span><i class="bi bi-people-fill"></i> 160 ساعة</span>
-                    <span><i class="bi bi-calendar3"></i> الفصلين</span>
+                    <span><i class="bi bi-clock"></i> 5 {{ 'featured_programs.years' | translate }}</span>
+                    <span><i class="bi bi-people-fill"></i> 160 {{ 'featured_programs.hours' | translate }}</span>
+                    <span><i class="bi bi-calendar3"></i> {{ 'featured_programs.semesters' | translate }}</span>
                   </div>
-                  <p>برنامج متكامل في العلوم الطبية الأساسية والسريرية يهدف إلى إعداد جيل متميز في مجالات الرعاية الصحية.</p>
-                  <a routerLink="/ar/about"
-                     class="program-btn"><span>اعرف المزيد</span> <i class="bi bi-arrow-inset-inline-end"></i></a>
+                  <p>{{ 'featured_programs.medical_sciences_desc' | translate }}</p>
+                  <a appAutoLanguageLink="/about"
+                     class="program-btn"><span>{{ 'featured_programs.learn_more' | translate }}</span> <i class="bi bi-arrow-inset-inline-end"></i></a>
                 </div>
               </div>
             </div>
@@ -123,7 +123,7 @@
              data-aos="zoom-in"
              data-aos-delay="100">
           <div class="program-item">
-            <div class="program-badge">ماجستير</div>
+            <div class="program-badge">{{ 'featured_programs.master' | translate }}</div>
             <div class="row g-0">
               <div class="col-md-4">
                 <div class="program-image-wrapper">
@@ -134,15 +134,15 @@
               </div>
               <div class="col-md-8">
                 <div class="program-content">
-                  <h3>الدراسات البيئية</h3>
+                  <h3>{{ 'featured_programs.environmental_studies' | translate }}</h3>
                   <div class="program-highlights">
-                    <span><i class="bi bi-clock"></i> سنتين</span>
-                    <span><i class="bi bi-people-fill"></i> 48 ساعة</span>
-                    <span><i class="bi bi-calendar3"></i> ربيع فقط</span>
+                    <span><i class="bi bi-clock"></i> 2 {{ 'featured_programs.years' | translate }}</span>
+                    <span><i class="bi bi-people-fill"></i> 48 {{ 'featured_programs.hours' | translate }}</span>
+                    <span><i class="bi bi-calendar3"></i> {{ 'featured_programs.spring_only' | translate }}</span>
                   </div>
-                  <p>برنامج يركز على الاستدامة وإيجاد حلول مبتكرة للتحديات البيئية العالمية والمحلية.</p>
-                  <a routerLink="/ar/about"
-                     class="program-btn"><span>اعرف المزيد</span> <i class="bi bi-arrow-inset-inline-end"></i></a>
+                  <p>{{ 'featured_programs.environmental_studies_desc' | translate }}</p>
+                  <a appAutoLanguageLink="/about"
+                     class="program-btn"><span>{{ 'featured_programs.learn_more' | translate }}</span> <i class="bi bi-arrow-inset-inline-end"></i></a>
                 </div>
               </div>
             </div>
@@ -153,7 +153,7 @@
              data-aos="zoom-in"
              data-aos-delay="200">
           <div class="program-item">
-            <div class="program-badge">ماجستير</div>
+            <div class="program-badge">{{ 'featured_programs.master' | translate }}</div>
             <div class="row g-0">
               <div class="col-md-4">
                 <div class="program-image-wrapper">
@@ -164,15 +164,15 @@
               </div>
               <div class="col-md-8">
                 <div class="program-content">
-                  <h3>الهندسة الميكانيكية</h3>
+                  <h3>{{ 'featured_programs.mechanical_engineering' | translate }}</h3>
                   <div class="program-highlights">
-                    <span><i class="bi bi-clock"></i> سنتين</span>
-                    <span><i class="bi bi-people-fill"></i> 60 ساعة</span>
-                    <span><i class="bi bi-calendar3"></i> الفصلين</span>
+                    <span><i class="bi bi-clock"></i> 2 {{ 'featured_programs.years' | translate }}</span>
+                    <span><i class="bi bi-people-fill"></i> 60 {{ 'featured_programs.hours' | translate }}</span>
+                    <span><i class="bi bi-calendar3"></i> {{ 'featured_programs.semesters' | translate }}</span>
                   </div>
-                  <p>برنامج يطور مهارات البحث والتصميم في مجالات الطاقة، التصنيع، والتقنيات الميكانيكية المتقدمة.</p>
-                  <a routerLink="/ar/about"
-                     class="program-btn"><span>اعرف المزيد</span> <i class="bi bi-arrow-inset-inline-end"></i></a>
+                  <p>{{ 'featured_programs.mechanical_engineering_desc' | translate }}</p>
+                  <a appAutoLanguageLink="/about"
+                     class="program-btn"><span>{{ 'featured_programs.learn_more' | translate }}</span> <i class="bi bi-arrow-inset-inline-end"></i></a>
                 </div>
               </div>
             </div>
@@ -183,7 +183,7 @@
              data-aos="zoom-in"
              data-aos-delay="100">
           <div class="program-item">
-            <div class="program-badge">شهادة مهنية</div>
+            <div class="program-badge">{{ 'featured_programs.certificates' | translate }}</div>
             <div class="row g-0">
               <div class="col-md-4">
                 <div class="program-image-wrapper">
@@ -194,15 +194,15 @@
               </div>
               <div class="col-md-8">
                 <div class="program-content">
-                  <h3>تحليل البيانات</h3>
+                  <h3>{{ 'featured_programs.data_analysis' | translate }}</h3>
                   <div class="program-highlights">
-                    <span><i class="bi bi-clock"></i> 6 أشهر</span>
-                    <span><i class="bi bi-people-fill"></i> 24 ساعة</span>
-                    <span><i class="bi bi-calendar3"></i> على مدار العام</span>
+                    <span><i class="bi bi-clock"></i> 6 {{ 'featured_programs.months' | translate }}</span>
+                    <span><i class="bi bi-people-fill"></i> 24 {{ 'featured_programs.hours' | translate }}</span>
+                    <span><i class="bi bi-calendar3"></i> {{ 'featured_programs.year_round' | translate }}</span>
                   </div>
-                  <p>برنامج تدريبي عملي يركز على أدوات تحليل البيانات والإحصاء والذكاء الاصطناعي لتأهيل كوادر في سوق العمل.</p>
-                  <a routerLink="/ar/about"
-                     class="program-btn"><span>اعرف المزيد</span> <i class="bi bi-arrow-inset-inline-end"></i></a>
+                  <p>{{ 'featured_programs.data_analysis_desc' | translate }}</p>
+                  <a appAutoLanguageLink="/about"
+                     class="program-btn"><span>{{ 'featured_programs.learn_more' | translate }}</span> <i class="bi bi-arrow-inset-inline-end"></i></a>
                 </div>
               </div>
             </div>

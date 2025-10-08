@@ -16,14 +16,14 @@ export class LanguageStoreService {
   private readonly LANGUAGE_KEY = 'app_language';
   private readonly supportedLanguages = ['en', 'ar'];
   private readonly defaultLanguage: ISupportedLanguages = 'ar';
- 
+
   private readonly _currentLanguage = signal<ISupportedLanguages>(this.defaultLanguage);
-   
+
   readonly currentLanguage = this._currentLanguage.asReadonly();
   readonly direction = computed(() => this._currentLanguage() === 'ar' ? 'rtl' : 'ltr');
   readonly isRTL = computed(() => this._currentLanguage() === 'ar');
-  
- 
+
+
   readonly state = computed<LanguageState>(() => ({
     currentLanguage: this._currentLanguage(),
     direction: this.direction(),
@@ -78,22 +78,31 @@ export class LanguageStoreService {
         document.documentElement.classList.remove('rtl');
       }
     });
- 
-    this.router.events.subscribe(event => {
-      if (event.type === 1) {  
-        const lang = this.getLanguageFromUrl();
-        if (lang && this.supportedLanguages.includes(lang)) {
-          this.setLanguage(lang);
-        }
-      }
-    });
+
+    // Remove router events subscription to prevent refresh
+    // this.router.events.subscribe(event => {
+    //   console.log('LanguageStoreService: Router event:', event.type, event);
+    //   if (event.type === 1) {
+    //     const lang = this.getLanguageFromUrl();
+    //     if (lang && this.supportedLanguages.includes(lang)) {
+    //       // Only update language if it's different from current
+    //       const currentLang = this._currentLanguage();
+    //       if (lang !== currentLang) {
+    //         console.log('LanguageStoreService: Language changed from URL:', currentLang, 'to', lang);
+    //         this.setLanguage(lang);
+    //       }
+    //     }
+    //   }
+    // });
   }
 
   private getLanguageFromUrl(): ISupportedLanguages {
-    const urlSegments = this.router.url.split('/');
-    const lang = urlSegments[1];
+    const currentUrl = this.router.url;
+    // Extract language from URL using regex
+    const langMatch = currentUrl.match(/^\/([a-z]{2})(?:\/|$)/);
+    const lang = langMatch ? langMatch[1] : null;
 
-    if (this.supportedLanguages.includes(lang)) {
+    if (lang && this.supportedLanguages.includes(lang)) {
       return lang as ISupportedLanguages;
     }
     return this.defaultLanguage;
@@ -109,15 +118,21 @@ export class LanguageStoreService {
 
   changeLanguage(lang: ISupportedLanguages): void {
     if (this.supportedLanguages.includes(lang)) {
+      const currentUrl = this.router.url;
+      // Remove the current language from URL
+      const urlWithoutLang = currentUrl.replace(/^\/[a-z]{2}/, '') || '';
+      // Remove trailing slash if it's just the root path
+      const cleanUrlWithoutLang = urlWithoutLang === '/' ? '' : urlWithoutLang;
+      const newUrl = `/${lang}${cleanUrlWithoutLang}`;
+      
+      // Update language first
       this.setLanguage(lang);
       
-      const currentUrl = this.router.url;
-      const urlWithoutLang = currentUrl.substring(currentUrl.indexOf('/', 1));
-      const newUrl = `/${lang}${urlWithoutLang || ''}`;
- 
+      // Update meta tags
       this.updateMetaTagsForSEO(lang);
 
-      this.router.navigateByUrl(newUrl);
+      // Update URL without causing page refresh
+      window.history.replaceState(null, '', newUrl);
     }
   }
 
@@ -142,8 +157,16 @@ export class LanguageStoreService {
   }
 
   private updateHreflangTags(): void {
+    console.log('LanguageStoreService: Updating hreflang tags...');
     const currentUrl = window.location.origin + window.location.pathname;
-    const baseUrl = currentUrl.replace(/\/[a-z]{2}(\/|$)/, '/');
+    // Remove language from URL more precisely
+    const baseUrl = currentUrl.replace(/^\/[a-z]{2}(\/|$)/, '/');
+    // Remove trailing slash from base URL
+    const cleanBaseUrl = baseUrl.endsWith('/') && baseUrl !== '/' ? baseUrl.slice(0, -1) : baseUrl;
+
+    console.log('LanguageStoreService: Current URL:', currentUrl);
+    console.log('LanguageStoreService: Base URL:', baseUrl);
+    console.log('LanguageStoreService: Clean Base URL:', cleanBaseUrl);
 
     const existingHreflang = document.querySelectorAll('link[rel="alternate"][hreflang]');
     existingHreflang.forEach(link => link.remove());
@@ -152,14 +175,14 @@ export class LanguageStoreService {
       const link = document.createElement('link');
       link.rel = 'alternate';
       link.hreflang = lang;
-      link.href = `${baseUrl}${lang}`;
+      link.href = `${cleanBaseUrl}/${lang}`;
       document.head.appendChild(link);
     });
 
     const defaultLink = document.createElement('link');
     defaultLink.rel = 'alternate';
     defaultLink.hreflang = 'x-default';
-    defaultLink.href = `${baseUrl}ar`;
+    defaultLink.href = `${cleanBaseUrl}/ar`;
     document.head.appendChild(defaultLink);
   }
 }

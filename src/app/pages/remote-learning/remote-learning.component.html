@@ -1,8 +1,8 @@
 <app-header></app-header>
 
-<app-page-title title="التعلم عن بعد"
-                description="يتيح للطلاب من مختلف المناطق الجغرافية التعليم من خلال وسائل تعليمية حديثة؛ لتوفير فرص تعليمية مرنة للجميع"
-                currentPage="التعلم عن بعد">
+<app-page-title [title]="'page_titles.remote_learning.title' | translate"
+                [description]="'page_titles.remote_learning.description' | translate"
+                [currentPage]="'page_titles.remote_learning.current_page' | translate">
 </app-page-title>
 
 <app-remote-learning-section></app-remote-learning-section>

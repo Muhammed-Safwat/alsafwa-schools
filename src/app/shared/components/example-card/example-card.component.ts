@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
+import { AutoLanguageLinkDirective } from '../../core/directives/auto-language-link.directive';
 
 @Component({
   selector: 'app-example-card',
-  imports: [RouterModule],
+  standalone: true,
+  imports: [RouterModule, TranslateModule, AutoLanguageLinkDirective],
   templateUrl: './example-card.component.html',
   styleUrls: ['./example-card.component.scss']
 })

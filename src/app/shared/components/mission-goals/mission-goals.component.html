@@ -5,8 +5,8 @@
     <!-- Section Title -->
     <div class="row mb-5">
       <div class="col-lg-8 mx-auto text-center">
-        <h2 class="display-6 fw-bold mb-4">الرسالة والأهداف</h2>
-        <p class="lead">نلتزم برسالة واضحة وأهداف محددة لتحقيق التميز في التعليم والبحث العلمي</p>
+        <h2 class="display-6 fw-bold mb-4">{{ 'mission_goals.title' | translate }}</h2>
+        <p class="lead">{{ 'mission_goals.description' | translate }}</p>
       </div>
     </div>
 
@@ -18,37 +18,13 @@
             <div class="card-icon">
               <i class="bi bi-bullseye"></i>
             </div>
-            <h3>الرسالة</h3>
+            <h3>{{ 'mission_goals.mission' | translate }}</h3>
           </div>
           <div class="card-body">
             <ul class="mission-list">
-              <li>
-                <i class="bi bi-heart"></i>
-                <span>زرع وتنمية حسن الخلق</span>
-              </li>
-              <li>
-                <i class="bi bi-person-check"></i>
-                <span>زرع وتنمية الثقة بالنفس</span>
-              </li>
-              <li>
-                <i class="bi bi-mortarboard"></i>
-                <span>تقديم تعليم عالي الجودة والتطبيق العملي لتزويد الطلاب بالأدوات العلمية والعملية</span>
-              </li>
-              <li>
-                <i class="bi bi-lightbulb"></i>
-                <span>تعزيز الإبداع لإيجاد حلول مبتكرة للتحديات الحالية والمتوقعة</span>
-              </li>
-              <li>
-                <i class="bi bi-search"></i>
-                <span>تقديم أبحاث مميزة تساهم في التنمية المستدامة</span>
-              </li>
-              <li>
-                <i class="bi bi-shield-check"></i>
-                <span>حماية حقوق الإنسان</span>
-              </li>
-              <li>
-                <i class="bi bi-arrow-inset-inline-start-inset-inline-end"></i>
-                <span>تعزيز تبادل المعرفة مع الجامعات والمؤسسات المتخصصة</span>
+              <li *ngFor="let item of missionItems$ | async; let i = index">
+                <i [class]="getMissionIcon(i)"></i>
+                <span>{{ item }}</span>
               </li>
             </ul>
           </div>
@@ -62,37 +38,13 @@
             <div class="card-icon">
               <i class="bi bi-target"></i>
             </div>
-            <h3>الأهداف</h3>
+            <h3>{{ 'mission_goals.goals' | translate }}</h3>
           </div>
           <div class="card-body">
             <ul class="goals-list">
-              <li>
-                <i class="bi bi-person-gear"></i>
-                <span>تأهيل الطلاب ليصبحوا متخصصين في مجالاتهم</span>
-              </li>
-              <li>
-                <i class="bi bi-search"></i>
-                <span>دعم البحث العلمي والابتكار في مختلف المجالات</span>
-              </li>
-              <li>
-                <i class="bi bi-book"></i>
-                <span>تعزيز المعرفة والفهم في مختلف المجالات العلمية</span>
-              </li>
-              <li>
-                <i class="bi bi-people"></i>
-                <span>المساهمة في تنمية المجتمع</span>
-              </li>
-              <li>
-                <i class="bi bi-trophy"></i>
-                <span>إعداد قادة المستقبل</span>
-              </li>
-              <li>
-                <i class="bi bi-globe"></i>
-                <span>دعم التنمية المستدامة</span>
-              </li>
-              <li>
-                <i class="bi bi-handshake"></i>
-                <span>التعاون مع الجامعات والمؤسسات المتخصصة</span>
+              <li *ngFor="let item of goalsItems$ | async; let i = index">
+                <i [class]="getGoalsIcon(i)"></i>
+                <span>{{ item }}</span>
               </li>
             </ul>
           </div>

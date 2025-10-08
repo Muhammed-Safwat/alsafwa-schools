@@ -2,9 +2,9 @@
 
 <!-- Page Title -->
 <app-page-title
-  title="عن الجامعة"
-  description="تلتزم جامعة صفوة الصفوة بتقديم تعليم عالي الجودة لتخريج طلاب متميزين ينافسون طلاب أرقى الجامعات"
-  currentPage="عن الجامعة">
+  [title]="'page_titles.about.title' | translate"
+  [description]="'page_titles.about.description' | translate"
+  [currentPage]="'page_titles.about.current_page' | translate">
 </app-page-title>
 
 <app-history-section></app-history-section>

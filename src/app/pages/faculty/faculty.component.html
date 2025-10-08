@@ -1,8 +1,8 @@
 <app-header></app-header>
 <app-page-title
-  title="الكليات"
-  description="تعرف على الكليات التي تقدم التعليم في الجامعة"
-  currentPage="الكليات">
+  [title]="'page_titles.faculty.title' | translate"
+  [description]="'page_titles.faculty.description' | translate"
+  [currentPage]="'page_titles.faculty.current_page' | translate">
 </app-page-title>
 <!-- Faculty  Staff Section -->
 <section id="faculty--staff"
@@ -17,57 +17,57 @@
             data-aos="fade-up"
             data-aos-delay="300">
         <div class="departments-nav">
-          <h4 class="departments-title">الكليات</h4>
+          <h4 class="departments-title">{{ 'faculty.faculties_title' | translate }}</h4>
           <ul class="nav nav-tabs flex-column">
             <li class="nav-item">
               <button class="nav-link active"
                       data-bs-toggle="tab"
-                      data-bs-target="#faculty-tab-1">كلية الطب</button>
+                      data-bs-target="#faculty-tab-1">{{ 'faculty.medicine.name' | translate }}</button>
             </li>
             <li class="nav-item">
               <button class="nav-link"
                       data-bs-toggle="tab"
-                      data-bs-target="#faculty-tab-2">كلية طب الفم والأسنان</button>
+                      data-bs-target="#faculty-tab-2">{{ 'faculty.dentistry.name' | translate }}</button>
             </li>
             <li class="nav-item">
               <button class="nav-link"
                       data-bs-toggle="tab"
-                      data-bs-target="#faculty-tab-3">كلية العلوم الطبية</button>
+                      data-bs-target="#faculty-tab-3">{{ 'faculty.medical_sciences.name' | translate }}</button>
             </li>
             <li class="nav-item">
               <button class="nav-link"
                       data-bs-toggle="tab"
-                      data-bs-target="#faculty-tab-4">كلية الهندسة</button>
+                      data-bs-target="#faculty-tab-4">{{ 'faculty.engineering.name' | translate }}</button>
             </li>
             <li class="nav-item">
               <button class="nav-link"
                       data-bs-toggle="tab"
-                      data-bs-target="#faculty-tab-5">كلية الإدارة</button>
+                      data-bs-target="#faculty-tab-5">{{ 'faculty.management.name' | translate }}</button>
             </li>
             <li class="nav-item">
               <button class="nav-link"
                       data-bs-toggle="tab"
-                      data-bs-target="#faculty-tab-6">كلية الحقوق</button>
+                      data-bs-target="#faculty-tab-6">{{ 'faculty.law.name' | translate }}</button>
             </li>
             <li class="nav-item">
               <button class="nav-link"
                       data-bs-toggle="tab"
-                      data-bs-target="#faculty-tab-7">كلية العلوم الإنسانية</button>
+                      data-bs-target="#faculty-tab-7">{{ 'faculty.humanities.name' | translate }}</button>
             </li>
             <li class="nav-item">
               <button class="nav-link"
                       data-bs-toggle="tab"
-                      data-bs-target="#faculty-tab-8">كلية تنمية المجتمع</button>
+                      data-bs-target="#faculty-tab-8">{{ 'faculty.community_development.name' | translate }}</button>
             </li>
             <li class="nav-item">
               <button class="nav-link"
                       data-bs-toggle="tab"
-                      data-bs-target="#faculty-tab-9">كلية الحاسب الآلي ونظم المعلومات</button>
+                      data-bs-target="#faculty-tab-9">{{ 'faculty.computer_science.name' | translate }}</button>
             </li>
             <li class="nav-item">
               <button class="nav-link"
                       data-bs-toggle="tab"
-                      data-bs-target="#faculty-tab-10">كلية اللغات والترجمة</button>
+                      data-bs-target="#faculty-tab-10">{{ 'faculty.languages_translation.name' | translate }}</button>
             </li>
           </ul>
         </div>
@@ -81,33 +81,27 @@
           <div class="tab-pane fade show active"
                 id="faculty-tab-1">
             <div class="department-info mb-4">
-              <h3>كلية الطب</h3>
-              <p class="lead">تهدف إلى توفير تعليم طبي عالي الجودة والتدريب والممارسة العملية قبل التخرج للطلاب ليصبحوا مؤهلين لتقديم الخدمات الطبية المميزة ويتحملوا نتيجة أخطائهم.</p>
+              <h3>{{ 'faculty.medicine.name' | translate }}</h3>
+              <p class="lead">{{ 'faculty.medicine.description' | translate }}</p>
             </div>
             <div class="row g-4">
               <div class="col-md-6">
                 <div class="faculty-goals">
-                  <h5>أهداف الكلية:</h5>
+                  <h5>{{ 'faculty.faculty_goals' | translate }}</h5>
                   <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>توفير تعليم طبي عالي الجودة والتدريب والممارسة العملية</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>دعم البحث الطبي والابتكار</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>المساهمة في تقديم الرعاية الصحية المتميزة</li>
+                    <li *ngFor="let goal of 'faculty.medicine.goals' | translate" class="d-flex align-items-center mb-2">
+                      <i class="bi bi-check-circle text-primary me-2"></i>
+                      <span>{{ goal }}</span>
+                    </li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="faculty-specialties">
-                  <h5>التخصصات المتاحة:</h5>
+                  <h5>{{ 'faculty.available_specialties' | translate }}</h5>
                   <div class="row">
                     <div class="col-6">
-                      <span class="badge bg-primary me-2 mb-2">الطب الباطني</span>
-                      <span class="badge bg-primary me-2 mb-2">الجراحة</span>
-                      <span class="badge bg-primary me-2 mb-2">طب الأطفال</span>
-                    </div>
-                    <div class="col-6">
-                      <span class="badge bg-primary me-2 mb-2">طب النساء</span>
-                      <span class="badge bg-primary me-2 mb-2">طب العيون</span>
-                      <span class="badge bg-primary me-2 mb-2">طب القلب</span>
+                      <span *ngFor="let specialty of 'faculty.medicine.specialties' | translate" class="badge bg-primary me-2 mb-2">{{ specialty }}</span>
                     </div>
                   </div>
                 </div>
@@ -119,33 +113,27 @@
           <div class="tab-pane fade"
                 id="faculty-tab-2">
             <div class="department-info mb-4">
-              <h3>كلية طب الفم والأسنان</h3>
-              <p class="lead">تهدف إلى توفير التعليم عالي الجودة في طب الفم والأسنان والتدريب والتطبيق العملي قبل التخرج للطلاب ليصبحوا مؤهلين لتقديم خدمات طب الفم والأسنان المميزة.</p>
+              <h3>{{ 'faculty.dentistry.name' | translate }}</h3>
+              <p class="lead">{{ 'faculty.dentistry.description' | translate }}</p>
             </div>
             <div class="row g-4">
               <div class="col-md-6">
                 <div class="faculty-goals">
-                  <h5>أهداف الكلية:</h5>
+                  <h5>{{ 'faculty.faculty_goals' | translate }}</h5>
                   <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>توفير التعليم عالي الجودة في طب الفم والأسنان</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>دعم البحث العلمي والابتكار في مجال طب الفم والأسنان</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>المساهمة في تقديم الرعاية الصحية للفم والأسنان</li>
+                    <li *ngFor="let goal of 'faculty.dentistry.goals' | translate" class="d-flex align-items-center mb-2">
+                      <i class="bi bi-check-circle text-primary me-2"></i>
+                      <span>{{ goal }}</span>
+                    </li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="faculty-specialties">
-                  <h5>التخصصات المتاحة:</h5>
+                  <h5>{{ 'faculty.available_specialties' | translate }}</h5>
                   <div class="row">
                     <div class="col-6">
-                      <span class="badge bg-primary me-2 mb-2">جراحة الفم</span>
-                      <span class="badge bg-primary me-2 mb-2">تقويم الأسنان</span>
-                      <span class="badge bg-primary me-2 mb-2">طب أسنان الأطفال</span>
-                    </div>
-                    <div class="col-6">
-                      <span class="badge bg-primary me-2 mb-2">زراعة الأسنان</span>
-                      <span class="badge bg-primary me-2 mb-2">علاج الجذور</span>
-                      <span class="badge bg-primary me-2 mb-2">طب الأسنان التجميلي</span>
+                      <span *ngFor="let specialty of 'faculty.dentistry.specialties' | translate" class="badge bg-primary me-2 mb-2">{{ specialty }}</span>
                     </div>
                   </div>
                 </div>
@@ -157,33 +145,27 @@
           <div class="tab-pane fade"
                 id="faculty-tab-3">
             <div class="department-info mb-4">
-              <h3>كلية العلوم الطبية</h3>
-              <p class="lead">تهدف إلى توفير تعليم عالي الجودة في مجالات العلوم الطبية والتدريب والممارسة العملية قبل التخرج للطلاب ليصبحوا متخصصين متميزين في مجالاتهم الطبية.</p>
+              <h3>{{ 'faculty.medical_sciences.name' | translate }}</h3>
+              <p class="lead">{{ 'faculty.medical_sciences.description' | translate }}</p>
             </div>
             <div class="row g-4">
               <div class="col-md-6">
                 <div class="faculty-goals">
-                  <h5>أهداف الكلية:</h5>
+                  <h5>{{ 'faculty.faculty_goals' | translate }}</h5>
                   <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>توفير تعليم عالي الجودة في مجالات العلوم الطبية</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>دعم البحث العلمي والابتكار في مجالات العلوم الطبية</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>المساهمة في تقديم الرعاية الصحية المتميزة</li>
+                    <li *ngFor="let goal of 'faculty.medical_sciences.goals' | translate" class="d-flex align-items-center mb-2">
+                      <i class="bi bi-check-circle text-primary me-2"></i>
+                      <span>{{ goal }}</span>
+                    </li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="faculty-specialties">
-                  <h5>أقسام الكلية:</h5>
+                  <h5>{{ 'faculty.faculty_departments' | translate }}</h5>
                   <div class="row">
                     <div class="col-6">
-                      <span class="badge bg-primary me-2 mb-2">قسم التمريض</span>
-                      <span class="badge bg-primary me-2 mb-2">قسم العلاج الطبيعي</span>
-                      <span class="badge bg-primary me-2 mb-2">قسم المختبرات الطبية</span>
-                    </div>
-                    <div class="col-6">
-                      <span class="badge bg-primary me-2 mb-2">قسم الأشعة</span>
-                      <span class="badge bg-primary me-2 mb-2">قسم التغذية العلاجية</span>
-                      <span class="badge bg-primary me-2 mb-2">قسم الصحة العامة</span>
+                      <span *ngFor="let department of 'faculty.medical_sciences.departments' | translate" class="badge bg-primary me-2 mb-2">{{ department }}</span>
                     </div>
                   </div>
                 </div>
@@ -195,33 +177,27 @@
           <div class="tab-pane fade"
                 id="faculty-tab-4">
             <div class="department-info mb-4">
-              <h3>كلية الهندسة</h3>
-              <p class="lead">تهدف إلى توفير تعليم هندسي عالي الجودة والتدريب والممارسة العملية قبل التخرج للطلاب لتلبية احتياجات سوق العمل.</p>
+              <h3>{{ 'faculty.engineering.name' | translate }}</h3>
+              <p class="lead">{{ 'faculty.engineering.description' | translate }}</p>
             </div>
             <div class="row g-4">
               <div class="col-md-6">
                 <div class="faculty-goals">
-                  <h5>أهداف الكلية:</h5>
+                  <h5>{{ 'faculty.faculty_goals' | translate }}</h5>
                   <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>توفير تعليم هندسي عالي الجودة والتدريب والممارسة العملية</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>دعم البحث العلمي والابتكار في مجالات الهندسة</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>المساهمة في تنمية المجتمع وتحسين جودة الحياة</li>
+                    <li *ngFor="let goal of 'faculty.engineering.goals' | translate" class="d-flex align-items-center mb-2">
+                      <i class="bi bi-check-circle text-primary me-2"></i>
+                      <span>{{ goal }}</span>
+                    </li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="faculty-specialties">
-                  <h5>أقسام الكلية:</h5>
+                  <h5>{{ 'faculty.faculty_departments' | translate }}</h5>
                   <div class="row">
                     <div class="col-6">
-                      <span class="badge bg-primary me-2 mb-2">قسم الهندسة المدنية</span>
-                      <span class="badge bg-primary me-2 mb-2">قسم الهندسة المعمارية</span>
-                      <span class="badge bg-primary me-2 mb-2">قسم هندسة المساحة</span>
-                    </div>
-                    <div class="col-6">
-                      <span class="badge bg-primary me-2 mb-2">قسم الهندسة الكهربائية</span>
-                      <span class="badge bg-primary me-2 mb-2">قسم هندسة الحاسوب</span>
-                      <span class="badge bg-primary me-2 mb-2">قسم الهندسة الطبية</span>
+                      <span *ngFor="let department of 'faculty.engineering.departments' | translate" class="badge bg-primary me-2 mb-2">{{ department }}</span>
                     </div>
                   </div>
                 </div>
@@ -233,27 +209,27 @@
           <div class="tab-pane fade"
                 id="faculty-tab-5">
             <div class="department-info mb-4">
-              <h3>كلية الإدارة</h3>
-              <p class="lead">تهدف إلى توفير تعليم عالي الجودة في مجالات إدارة الأعمال والمحاسبة والتدريب والممارسة العملية قبل التخرج للطلاب في الشركات والمؤسسات لتلبية احتياجات سوق العمل.</p>
+              <h3>{{ 'faculty.management.name' | translate }}</h3>
+              <p class="lead">{{ 'faculty.management.description' | translate }}</p>
             </div>
             <div class="row g-4">
               <div class="col-md-6">
                 <div class="faculty-goals">
-                  <h5>أهداف الكلية:</h5>
+                  <h5>{{ 'faculty.faculty_goals' | translate }}</h5>
                   <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>توفير تعليم عالي الجودة في مجالات إدارة الأعمال والمحاسبة</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>تطوير مهارات القيادة والإدارة والمحاسبة لدى الطلاب</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>المساهمة في تنمية المجتمع وتحسين جودة الحياة</li>
+                    <li *ngFor="let goal of 'faculty.management.goals' | translate" class="d-flex align-items-center mb-2">
+                      <i class="bi bi-check-circle text-primary me-2"></i>
+                      <span>{{ goal }}</span>
+                    </li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="faculty-specialties">
-                  <h5>أقسام الكلية:</h5>
+                  <h5>{{ 'faculty.faculty_departments' | translate }}</h5>
                   <div class="row">
                     <div class="col-6">
-                      <span class="badge bg-primary me-2 mb-2">قسم الإدارة</span>
-                      <span class="badge bg-primary me-2 mb-2">قسم المحاسبة</span>
+                      <span *ngFor="let department of 'faculty.management.departments' | translate" class="badge bg-primary me-2 mb-2">{{ department }}</span>
                     </div>
                   </div>
                 </div>
@@ -265,17 +241,18 @@
           <div class="tab-pane fade"
                 id="faculty-tab-6">
             <div class="department-info mb-4">
-              <h3>كلية الحقوق</h3>
-              <p class="lead">تهدف إلى توفير تعليم عالي الجودة في مجالات حقوق الإنسان والقانون والتدريب والممارسة العملية قبل التخرج للطلاب ليصبحوا مؤهلين للعمل في السلطة القضائية أو محامين أو مستشارين.</p>
+              <h3>{{ 'faculty.law.name' | translate }}</h3>
+              <p class="lead">{{ 'faculty.law.description' | translate }}</p>
             </div>
             <div class="row g-4">
               <div class="col-md-6">
                 <div class="faculty-goals">
-                  <h5>أهداف الكلية:</h5>
+                  <h5>{{ 'faculty.faculty_goals' | translate }}</h5>
                   <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>توفير تعليم عالي الجودة في مجالات حقوق الإنسان والقانون</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>تطوير المعرفة القانونية والفهم العميق للقوانين واللوائح</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>المساهمة في تحقيق العدالة من خلال تطبيق المعرفة القانونية</li>
+                    <li *ngFor="let goal of 'faculty.law.goals' | translate" class="d-flex align-items-center mb-2">
+                      <i class="bi bi-check-circle text-primary me-2"></i>
+                      <span>{{ goal }}</span>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -286,26 +263,27 @@
           <div class="tab-pane fade"
                 id="faculty-tab-7">
             <div class="department-info mb-4">
-              <h3>كلية العلوم الإنسانية</h3>
-              <p class="lead">تهدف إلى توفير تعليم عالي الجودة في مجالات الدعوة والإعلام والتدريب والممارسة العملية قبل التخرج للطلاب لتأهيلهم لفهم وتحليل الظواهر الإنسانية والثقافية.</p>
+              <h3>{{ 'faculty.humanities.name' | translate }}</h3>
+              <p class="lead">{{ 'faculty.humanities.description' | translate }}</p>
             </div>
             <div class="row g-4">
               <div class="col-md-6">
                 <div class="faculty-goals">
-                  <h5>أهداف الكلية:</h5>
+                  <h5>{{ 'faculty.faculty_goals' | translate }}</h5>
                   <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>توفير تعليم عالي الجودة في مجالات الدعوة والإعلام</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>المساهمة في تنمية المجتمع وتحسين جودة الحياة</li>
+                    <li *ngFor="let goal of 'faculty.humanities.goals' | translate" class="d-flex align-items-center mb-2">
+                      <i class="bi bi-check-circle text-primary me-2"></i>
+                      <span>{{ goal }}</span>
+                    </li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="faculty-specialties">
-                  <h5>أقسام الكلية:</h5>
+                  <h5>{{ 'faculty.faculty_departments' | translate }}</h5>
                   <div class="row">
                     <div class="col-6">
-                      <span class="badge bg-primary me-2 mb-2">قسم الدعوة</span>
-                      <span class="badge bg-primary me-2 mb-2">قسم الإعلام</span>
+                      <span *ngFor="let department of 'faculty.humanities.departments' | translate" class="badge bg-primary me-2 mb-2">{{ department }}</span>
                     </div>
                   </div>
                 </div>
@@ -317,16 +295,18 @@
           <div class="tab-pane fade"
                 id="faculty-tab-8">
             <div class="department-info mb-4">
-              <h3>كلية تنمية المجتمع</h3>
-              <p class="lead">تهدف إلى توفير تعليم عالي الجودة في مجالات تنمية المجتمع والخدمة الاجتماعية والتدريب والممارسة العملية قبل التخرج للطلاب لتأهيلهم ليصبحوا متخصصين في تنمية المجتمع والعمل الاجتماعي.</p>
+              <h3>{{ 'faculty.community_development.name' | translate }}</h3>
+              <p class="lead">{{ 'faculty.community_development.description' | translate }}</p>
             </div>
             <div class="row g-4">
               <div class="col-md-6">
                 <div class="faculty-goals">
-                  <h5>أهداف الكلية:</h5>
+                  <h5>{{ 'faculty.faculty_goals' | translate }}</h5>
                   <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>توفير تعليم عالي الجودة في مجالات تنمية المجتمع والخدمة الاجتماعية</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>المساهمة في تنمية المجتمع وتحسين جودة الحياة</li>
+                    <li *ngFor="let goal of 'faculty.community_development.goals' | translate" class="d-flex align-items-center mb-2">
+                      <i class="bi bi-check-circle text-primary me-2"></i>
+                      <span>{{ goal }}</span>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -337,16 +317,18 @@
           <div class="tab-pane fade"
                 id="faculty-tab-9">
             <div class="department-info mb-4">
-              <h3>كلية الحاسب الآلي ونظم المعلومات</h3>
-              <p class="lead">تهدف إلى توفير تعليم عالي الجودة في مجالات الحاسب الآلي وتقنية المعلومات والتدريب والممارسة العملية قبل التخرج للطلاب لتأهيلهم ليصبحوا متخصصين في تصميم وتطوير البرمجيات ونظم المعلومات.</p>
+              <h3>{{ 'faculty.computer_science.name' | translate }}</h3>
+              <p class="lead">{{ 'faculty.computer_science.description' | translate }}</p>
             </div>
             <div class="row g-4">
               <div class="col-md-6">
                 <div class="faculty-goals">
-                  <h5>أهداف الكلية:</h5>
+                  <h5>{{ 'faculty.faculty_goals' | translate }}</h5>
                   <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>توفير تعليم عالي الجودة في مجالات الحاسب الآلي وتقنية المعلومات</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>تأهيل الطلاب ليصبحوا متخصصين في تصميم وتطوير البرمجيات</li>
+                    <li *ngFor="let goal of 'faculty.computer_science.goals' | translate" class="d-flex align-items-center mb-2">
+                      <i class="bi bi-check-circle text-primary me-2"></i>
+                      <span>{{ goal }}</span>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -357,17 +339,18 @@
           <div class="tab-pane fade"
                 id="faculty-tab-10">
             <div class="department-info mb-4">
-              <h3>كلية اللغات والترجمة</h3>
-              <p class="lead">تهدف إلى توفير تعليم عالي الجودة في مجالات اللغات والترجمة والتدريب والممارسة العملية قبل التخرج لتأهيلهم ليصبحوا خبراء في اللغات والترجمة.</p>
+              <h3>{{ 'faculty.languages_translation.name' | translate }}</h3>
+              <p class="lead">{{ 'faculty.languages_translation.description' | translate }}</p>
             </div>
             <div class="row g-4">
               <div class="col-md-6">
                 <div class="faculty-goals">
-                  <h5>أهداف الكلية:</h5>
+                  <h5>{{ 'faculty.faculty_goals' | translate }}</h5>
                   <ul class="list-unstyled">
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>توفير تعليم عالي الجودة في مجالات اللغات والترجمة</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>تطوير المعرفة اللغوية والفهم العميق للغات والثقافات</li>
-                    <li><i class="bi bi-check-circle text-primary me-2"></i>المساهمة في تسهيل التواصل اللغوي بين الثقافات المختلفة</li>
+                    <li *ngFor="let goal of 'faculty.languages_translation.goals' | translate" class="d-flex align-items-center mb-2">
+                      <i class="bi bi-check-circle text-primary me-2"></i>
+                      <span>{{ goal }}</span>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -376,9 +359,7 @@
         </div>
       </div>
     </div>
-
   </div>
-
 </section>
 <!-- /Faculty  Staff Section -->
 <app-footer></app-footer>

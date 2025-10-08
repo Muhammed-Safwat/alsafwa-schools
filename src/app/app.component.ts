@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
 import { RouterOutlet, NavigationEnd, Router } from '@angular/router';
 import { PreloaderComponent } from './shared/components/preloader/preloader.component';
+import { LanguageService } from './shared/core/services/language.service';
 import { filter } from 'rxjs/operators';
 
 declare var AOS: any;
@@ -17,16 +18,22 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   title = 'Alsafwa University';
   private routerSubscription: any;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private languageService: LanguageService) {
+    console.log('AppComponent: Constructor called');
+  }
 
   ngOnInit() {
+    console.log('AppComponent: Initializing...');
+    console.log('AppComponent: Current language:', this.languageService.getCurrentLanguage());
+
     this.waitForPureCounter();
     this.initializeAOS();
 
     // Listen to route changes
     this.routerSubscription = this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
-      .subscribe(() => {
+      .subscribe((event) => {
+        console.log('AppComponent: Route changed to:', event.url);
         setTimeout(() => {
           this.refreshAOS();
         }, 100);
@@ -34,6 +41,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   ngAfterViewInit() {
+    console.log('AppComponent: After view init...');
     setTimeout(() => {
       this.waitForPureCounter();
       this.initializeAOS();
@@ -41,14 +49,17 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   ngOnDestroy() {
+    console.log('AppComponent: Destroying...');
     if (this.routerSubscription) {
       this.routerSubscription.unsubscribe();
     }
   }
 
   private waitForPureCounter() {
+    console.log('AppComponent: Waiting for PureCounter...');
     const checkPureCounter = () => {
       if (typeof PureCounter !== 'undefined') {
+        console.log('AppComponent: PureCounter found, initializing...');
         new PureCounter();
       } else {
         setTimeout(checkPureCounter, 100);
@@ -58,8 +69,10 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   private initializeAOS() {
+    console.log('AppComponent: Initializing AOS...');
     const checkAOS = () => {
       if (typeof AOS !== 'undefined') {
+        console.log('AppComponent: AOS found, initializing...');
         AOS.init({
           duration: 1000,
           once: true,
@@ -75,6 +88,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   private refreshAOS() {
+    console.log('AppComponent: Refreshing AOS...');
     if (typeof AOS !== 'undefined') {
       AOS.refresh();
     }

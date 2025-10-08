@@ -1,32 +1,32 @@
-<div class="language-switcher dropdown">
-  <button class="btn btn-link gap-2 dropdown-toggle d-flex align-items-center"
+<div class="language-switcher dropdown mx-2">
+  <button class="btn btn-link dropdown-toggle d-flex align-items-center"
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false">
-    <img [src]="currentLang === 'ar' ? '/images/flags/saudi-flag.svg' : '/images/flags/uk-flag.avif'"
+    <img [src]="currentLang === 'ar' ? '/assets/img/flags/saudi-flag.svg' : '/assets/img/flags/uk-flag.avif'"
          [alt]="currentLang === 'ar' ? 'Saudi Arabia Flag' : 'UK Flag'"
-         class="flag-icon me-2">
-    <span class="language-text">{{ currentLang === 'ar' ? 'العربية' : 'English' }}</span>
+         class="flag-icon">
+         <span class="language-text">{{ currentLang === 'ar' ? ('language.arabic' | translate) : ('language.english' | translate) }}</span>
   </button>
   <ul class="dropdown-menu dropdown-menu-end">
     <li>
       <a class="dropdown-item d-flex gap-2 align-items-center"
          (click)="changeLanguage('ar')"
          [class.active]="currentLang === 'ar'">
-        <img src="/images/flags/saudi-flag.svg"
+        <img src="/assets/img/flags/saudi-flag.svg"
              alt="Saudi Arabia Flag"
              class="flag-icon me-2">
-        <span>العربية</span>
+        <span>{{ 'language.arabic' | translate }}</span>
       </a>
     </li>
     <li>
       <a class="dropdown-item d-flex gap-2 align-items-center"
          (click)="changeLanguage('en')"
          [class.active]="currentLang === 'en'">
-        <img src="/images/flags/uk-flag.avif"
+        <img src="/assets/img/flags/uk-flag.avif"
              alt="UK Flag"
              class="flag-icon me-2">
-        <span>English</span>
+        <span>{{ 'language.english' | translate }}</span>
       </a>
     </li>
   </ul>

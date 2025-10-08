@@ -9,13 +9,13 @@
              data-aos="zoom-out"
              data-aos-delay="100">
           <div class="hero-content">
-            <h1>نحو مستقبل مشرق بالعلم والمعرفة</h1>
-            <p>تلتزم جامعة صفوة الصفوة بتقديم تعليم عالي الجودة؛ لتخريج طلاب متميزين ينافسون طلاب أرقى الجامعات. نركز على التعليم التفاعلي والتعليم الذاتي والتعليم التعاوني والبحث العلمي والتدريب لترسيخ العلم.</p>
+            <h1>{{ 'banner.title' | translate }}</h1>
+            <p>{{ 'banner.description' | translate }}</p>
             <div class="cta-buttons">
-              <a routerLink="/ar/admissions"
-                 class="btn-primary">ابدأ رحلتك التعليمية</a>
-              <a routerLink="/ar/about"
-                 class="btn-secondary">تعرّف على برامجنا</a>
+              <a appAutoLanguageLink="/admissions"
+                 class="btn-primary">{{ 'banner.start_journey' | translate }}</a>
+              <a appAutoLanguageLink="/about"
+                 class="btn-secondary">{{ 'banner.explore_programs' | translate }}</a>
             </div>
           </div>
         </div>
@@ -24,36 +24,22 @@
              data-aos-delay="200">
           <div class="stats-card">
             <div class="stats-header">
-              <h3>لماذا تختارنا</h3>
+              <h3>{{ 'banner.why_choose_us' | translate }}</h3>
               <div class="decoration-line"></div>
             </div>
             <div class="stats-grid">
               <div class="stat-item">
-                <div class="stat-icon"><i class="bi bi-trophy-fill"></i></div>
+                <div class="stat-icon"><i class="bi bi-clipboard-data"></i></div>
                 <div class="stat-content">
-                  <h4>٩٨٪</h4>
-                  <p>توظيف الخريجين</p>
-                </div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-icon"><i class="bi bi-globe"></i></div>
-                <div class="stat-content">
-                  <h4>٤٥+</h4>
-                  <p>شراكات دولية</p>
-                </div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-icon"><i class="bi bi-mortarboard"></i></div>
-                <div class="stat-content">
-                  <h4>١٥:١</h4>
-                  <p>نسبة الطلاب لأعضاء هيئة التدريس</p>
+                  <h4>{{ 'banner.stats.research_funding_count' | translate }}</h4>
+                  <p>{{ 'banner.research_funding' | translate }}</p>
                 </div>
               </div>
               <div class="stat-item">
                 <div class="stat-icon"><i class="bi bi-building"></i></div>
                 <div class="stat-content">
-                  <h4>١٢٠+</h4>
-                  <p>برنامج أكاديمي</p>
+                  <h4>{{ 'banner.stats.academic_programs_count' | translate }}</h4>
+                  <p>{{ 'banner.academic_programs' | translate }}</p>
                 </div>
               </div>
             </div>
@@ -67,22 +53,22 @@
     <div class="container">
       <div class="row gy-4">
         <div class="col-md-6 col-xl-4 col-12 ticker-item">
-          <span class="date">١٥ نوفمبر</span>
-          <span class="title">اليوم المفتوح للطلاب</span>
-          <a routerLink="/ar/admissions"
-             class="btn-register">سجّل الآن</a>
+          <span class="date">{{ 'banner.dates.november_15' | translate }}</span>
+          <span class="title">{{ 'banner.open_day' | translate }}</span>
+          <a appAutoLanguageLink="/admissions"
+             class="btn-register">{{ 'banner.register_now' | translate }}</a>
         </div>
         <div class="col-md-6 col-12 col-xl-4 ticker-item">
-          <span class="date">٥ ديسمبر</span>
-          <span class="title">ورشة عمل التقديم</span>
-          <a routerLink="/ar/admissions"
-             class="btn-register">سجّل الآن</a>
+          <span class="date">{{ 'banner.dates.december_5' | translate }}</span>
+          <span class="title">{{ 'banner.application_workshop' | translate }}</span>
+          <a appAutoLanguageLink="/admissions"
+             class="btn-register">{{ 'banner.register_now' | translate }}</a>
         </div>
         <div class="col-md-6 col-12 col-xl-4 ticker-item">
-          <span class="date">١٠ يناير</span>
-          <span class="title">اللقاء التعريفي للطلاب الدوليين</span>
-          <a routerLink="/ar/admissions"
-             class="btn-register">سجّل الآن</a>
+          <span class="date">{{ 'banner.dates.january_10' | translate }}</span>
+          <span class="title">{{ 'banner.international_students_meeting' | translate }}</span>
+          <a appAutoLanguageLink="/admissions"
+             class="btn-register">{{ 'banner.register_now' | translate }}</a>
         </div>
       </div>
     </div>

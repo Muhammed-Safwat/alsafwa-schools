@@ -5,8 +5,8 @@
     <!-- Section Title -->
     <div class="row mb-5">
       <div class="col-lg-8 mx-auto text-center">
-        <h2 class="display-6 fw-bold mb-4">المبادئ والقيم</h2>
-        <p class="lead">نلتزم بمجموعة من المبادئ والقيم التي تحكم عملنا وتوجه رؤيتنا نحو التميز</p>
+        <h2 class="display-6 fw-bold mb-4">{{ 'principles.title' | translate }}</h2>
+        <p class="lead">{{ 'principles.description' | translate }}</p>
       </div>
     </div>
 
@@ -18,37 +18,13 @@
             <div class="card-icon">
               <i class="bi bi-heart"></i>
             </div>
-            <h3>المبادئ</h3>
+            <h3>{{ 'principles.principles' | translate }}</h3>
           </div>
           <div class="card-body">
             <ul class="principles-list">
-              <li>
+              <li *ngFor="let item of 'principles.principles_items' | translate">
                 <i class="bi bi-check-circle"></i>
-                <span>غرس وتنمية حسن الخلق</span>
-              </li>
-              <li>
-                <i class="bi bi-check-circle"></i>
-                <span>تعزيز احترام حقوق الإنسان</span>
-              </li>
-              <li>
-                <i class="bi bi-check-circle"></i>
-                <span>حظر كافة أشكال التمييز</span>
-              </li>
-              <li>
-                <i class="bi bi-check-circle"></i>
-                <span>تعزيز الاحترام المتبادل بين أعضاء هيئة التدريس والطلاب والموظفين</span>
-              </li>
-              <li>
-                <i class="bi bi-check-circle"></i>
-                <span>تعزيز مهارات التعامل مع الآخرين</span>
-              </li>
-              <li>
-                <i class="bi bi-check-circle"></i>
-                <span>تشجيع العمل الجماعي</span>
-              </li>
-              <li>
-                <i class="bi bi-check-circle"></i>
-                <span>محاسبة النفس والتقييم وتحمل المسؤولية والتقويم</span>
+                <span>{{ item }}</span>
               </li>
             </ul>
           </div>
@@ -62,37 +38,13 @@
             <div class="card-icon">
               <i class="bi bi-star"></i>
             </div>
-            <h3>القيم</h3>
+            <h3>{{ 'principles.values' | translate }}</h3>
           </div>
           <div class="card-body">
             <ul class="values-list">
-              <li>
+              <li *ngFor="let item of 'principles.values_items' | translate">
                 <i class="bi bi-check-circle"></i>
-                <span>السعي لتحقيق التميز في التعليم</span>
-              </li>
-              <li>
-                <i class="bi bi-check-circle"></i>
-                <span>تعزيز الشفافية والمساءلة في كافة المعاملات</span>
-              </li>
-              <li>
-                <i class="bi bi-check-circle"></i>
-                <span>تعزيز البحث العلمي</span>
-              </li>
-              <li>
-                <i class="bi bi-check-circle"></i>
-                <span>دعم نشر البحوث العلمية المحكمة</span>
-              </li>
-              <li>
-                <i class="bi bi-check-circle"></i>
-                <span>المشاركة الفعالة</span>
-              </li>
-              <li>
-                <i class="bi bi-check-circle"></i>
-                <span>احترام خصوصية وسرية البيانات</span>
-              </li>
-              <li>
-                <i class="bi bi-check-circle"></i>
-                <span>تعزيز التفكير الإبداعي لإيجاد الحلول العملية لتحديات الحاضر والمستقبل</span>
+                <span>{{ item }}</span>
               </li>
             </ul>
           </div>

@@ -1,8 +1,8 @@
 <app-header></app-header>
 <app-page-title
-  title="تواصل معنا"
-  description="نحن هنا للإجابة على استفساراتكم ومساعدتكم في رحلتكم التعليمية مع جامعة صفوة الصفوة"
-  currentPage="تواصل معنا">
+  [title]="'page_titles.contact.title' | translate"
+  [description]="'page_titles.contact.description' | translate"
+  [currentPage]="'page_titles.contact.current_page' | translate">
 </app-page-title>
 
 <app-contact-section></app-contact-section>

@@ -1,24 +1,20 @@
 <footer id="footer"
-        class="footer position-relative dark-background"
-        dir="rtl">
+        class="footer position-relative dark-background">
 
   <div class="container footer-top">
     <div class="row gy-4">
 
       <div class="col-lg-4 col-md-6 footer-about">
-        <a routerLink="/ar"
+        <a appAutoLanguageLink="/"
            class="logo d-flex align-items-center">
           <span class="sitename d-flex gap-2">
-            <img src="assets/img/safwat.svg"
-                 alt="">
-            <h3 class="text-white">صفوت الصفوة العالمية</h3>
+            <img src="assets/img/Safwat-Al-Safwa-International-University.png"
+                 alt=""> 
           </span>
         </a>
-        <div class="footer-contact pt-3">
-          <p>شارع الملك فهد</p>
-          <p>الرياض، المملكة العربية السعودية</p>
-          <p class="mt-3"><strong>الهاتف:</strong> <span>+966 555 888 999</span></p>
-          <p><strong>البريد الإلكتروني:</strong> <span>{{'info@school.edu.sa'}}</span></p>
+        <div class="footer-contact"> 
+          <p class="mt-3"><strong>{{ 'university.phone' | translate }}</strong> <span>+966 555 888 999</span></p>
+          <p><strong>{{ 'university.email' | translate }}</strong> <span>{{'info@school.edu.sa'}}</span></p>
         </div>
         <div class="social-links d-flex mt-4">
           <a href="#" target="_blank"><i class="bi bi-twitter-x"></i></a>
@@ -29,46 +25,46 @@
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
-        <h4>روابط هامة</h4>
+        <h4>{{ 'footer.important_links' | translate }}</h4>
         <ul>
-          <li><a routerLink="/ar">الرئيسية</a></li>
-          <li><a routerLink="/ar/about">من نحن</a></li>
-          <li><a routerLink="/ar/faculty">خدماتنا</a></li>
-          <li><a routerLink="/ar/terms-of-service">الشروط والأحكام</a></li>
-          <li><a routerLink="/ar/privacy">سياسة الخصوصية</a></li>
+          <li><a appAutoLanguageLink="/">{{ 'footer.home' | translate }}</a></li>
+          <li><a appAutoLanguageLink="/about">{{ 'footer.about_us' | translate }}</a></li>
+          <li><a appAutoLanguageLink="/faculty">{{ 'footer.our_services' | translate }}</a></li>
+          <li><a appAutoLanguageLink="/terms-of-service">{{ 'footer.terms_conditions' | translate }}</a></li>
+          <li><a appAutoLanguageLink="/privacy">{{ 'footer.privacy_policy' | translate }}</a></li>
         </ul>
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
-        <h4>خدماتنا</h4>
+        <h4>{{ 'footer.services' | translate }}</h4>
         <ul>
-          <li><a routerLink="/ar/remote-learning">التعليم الإلكتروني</a></li>
-          <li><a routerLink="/ar/institutes">الدورات التدريبية</a></li>
-          <li><a routerLink="/ar/research">إدارة الفعاليات</a></li>
-          <li><a routerLink="/ar/faculty">التوجيه الأكاديمي</a></li>
-          <li><a routerLink="/ar/about">التصميم والإبداع</a></li>
+          <li><a appAutoLanguageLink="/remote-learning">{{ 'footer.e_learning' | translate }}</a></li>
+          <li><a appAutoLanguageLink="/institutes">{{ 'footer.training_courses' | translate }}</a></li>
+          <li><a appAutoLanguageLink="/research">{{ 'footer.event_management' | translate }}</a></li>
+          <li><a appAutoLanguageLink="/faculty">{{ 'footer.academic_guidance' | translate }}</a></li>
+          <li><a appAutoLanguageLink="/about">{{ 'footer.design_creativity' | translate }}</a></li>
         </ul>
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
-        <h4>الموارد</h4>
+        <h4>{{ 'footer.resources' | translate }}</h4>
         <ul>
-          <li><a routerLink="/ar/research">المكتبة الرقمية</a></li>
-          <li><a routerLink="/ar/research">المجلات العلمية</a></li>
-          <li><a routerLink="/ar/about">الأنشطة الطلابية</a></li>
-          <li><a routerLink="/ar/faculty">المعامل والمختبرات</a></li>
-          <li><a routerLink="/ar/contact">مركز الدعم</a></li>
+          <li><a appAutoLanguageLink="/research">{{ 'footer.digital_library' | translate }}</a></li>
+          <li><a appAutoLanguageLink="/research">{{ 'footer.scientific_journals' | translate }}</a></li>
+          <li><a appAutoLanguageLink="/about">{{ 'footer.student_activities' | translate }}</a></li>
+          <li><a appAutoLanguageLink="/faculty">{{ 'footer.labs_workshops' | translate }}</a></li>
+          <li><a appAutoLanguageLink="/contact">{{ 'footer.support_center' | translate }}</a></li>
         </ul>
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
-        <h4>روابط سريعة</h4>
+        <h4>{{ 'footer.quick_links' | translate }}</h4>
         <ul>
-          <li><a routerLink="/ar/admissions">التقويم الأكاديمي</a></li>
-          <li><a routerLink="/ar/login">الخدمات الإلكترونية</a></li>
-          <li><a routerLink="/ar/login">البوابة الطلابية</a></li>
-          <li><a routerLink="/ar/faculty">أعضاء هيئة التدريس</a></li>
-          <li><a routerLink="/ar/contact">التواصل</a></li>
+          <li><a appAutoLanguageLink="/admissions">{{ 'footer.academic_calendar' | translate }}</a></li>
+          <li><a appAutoLanguageLink="/login">{{ 'footer.e_services' | translate }}</a></li>
+          <li><a appAutoLanguageLink="/login">{{ 'footer.student_portal' | translate }}</a></li>
+          <li><a appAutoLanguageLink="/faculty">{{ 'footer.faculty_members' | translate }}</a></li>
+          <li><a appAutoLanguageLink="/contact">{{ 'footer.contact_us' | translate }}</a></li>
         </ul>
       </div>
 

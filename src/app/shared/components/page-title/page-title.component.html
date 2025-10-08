@@ -1,12 +1,12 @@
 <!-- Page Title -->
 <div class="page-title dark-background">
   <div class="container position-relative">
-    <h1>{{ title }}</h1>
-    <p>{{ description }}</p>
+    <h1>{{ title | translate }}</h1>
+    <p>{{ description | translate }}</p>
     <nav class="breadcrumbs">
       <ol>
-        <li><a routerLink="/ar">{{ homeText }}</a></li>
-        <li class="current">{{ currentPage }}</li>
+        <li><a routerLink="/ar">{{ homeText | translate }}</a></li>
+        <li class="current">{{ currentPage | translate }}</li>
       </ol>
     </nav>
   </div>
