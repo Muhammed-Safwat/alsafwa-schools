@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterModule } from '@angular/router';
@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent implements OnInit {
-
+  @Input() showMission: boolean = true;
   ngOnInit() {
 
   }

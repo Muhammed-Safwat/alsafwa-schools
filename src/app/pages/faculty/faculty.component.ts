@@ -24,8 +24,7 @@ export class FacultyComponent implements AfterViewInit {
       if (typeof AOS !== 'undefined') {
         AOS.refresh();
       }
-      
-      // إعادة تهيئة PureCounter باستخدام الخدمة
+
       this.counterService.initializeCounters();
     }, 100);
   }

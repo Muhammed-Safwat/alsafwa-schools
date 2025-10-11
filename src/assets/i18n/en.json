@@ -34,7 +34,8 @@
     "e_services": "E-Services",
     "student_portal": "Student Portal",
     "faculty_members": "Faculty Members",
-    "contact_us": "Contact Us"
+    "contact_us": "Contact Us",
+    "copyright": "All Rights Reserved"
   },
   "university": {
     "name": "Safwat Al Safwa International University",
@@ -86,7 +87,8 @@
     "values_text": "Striving for excellence in education, promoting transparency and accountability, and supporting scientific research. Active participation, respecting data privacy, and promoting creative thinking to solve challenges."
   },
   "benefits": {
-    "title": "Benefits of Studying at Safwat Al Safwa University",
+    "title": "Safwat Al Safwa University",
+    "topTitle": "Benefits of Studying",
     "description": "We provide our students with a comprehensive educational experience that opens wide horizons for success and excellence in their professional and personal lives. We strive to provide an integrated educational environment that combines academic quality, scientific research, and student activities.",
     "useful_education": "Useful and Productive Education",
     "useful_education_text": "We provide useful and productive education and adequate training for success in professional life in a rapidly evolving world",
@@ -243,6 +245,11 @@
       "Digital Marketing Program",
       "Project Management Program",
       "Graphic Design Program",
+      "Engineering Design Program",
+      "Architectural Design Program",
+      "Interior Design Program",
+      "Industrial Design Program",
+      "3D Design Program",
       "Welding and Blacksmithing Program",
       "Electrical and Electronics Program",
       "Mechanics Program"
@@ -484,11 +491,15 @@
       ],
       "specialties": [
         "Internal Medicine",
-        "Surgery",
+        "General Surgery",
         "Pediatrics",
-        "Gynecology",
+        "Obstetrics and Gynecology",
         "Ophthalmology",
-        "Cardiology"
+        "Cardiology",
+        "Neurology",
+        "Dermatology",
+        "Ear, Nose and Throat",
+        "Orthopedics"
       ]
     },
     "dentistry": {
@@ -500,12 +511,26 @@
         "Contribute to providing oral and dental healthcare"
       ],
       "specialties": [
-        "Oral Surgery",
+        "Oral and Maxillofacial Surgery",
         "Orthodontics",
         "Pediatric Dentistry",
         "Dental Implants",
-        "Root Canal Treatment",
-        "Cosmetic Dentistry"
+        "Endodontics",
+        "Cosmetic Dentistry",
+        "Periodontics",
+        "Preventive Dentistry",
+        "Prosthodontics",
+        "Forensic Dentistry",
+        "Laser Dentistry",
+        "Digital Dentistry",
+        "Geriatric Dentistry",
+        "Sports Dentistry",
+        "Veterinary Dentistry",
+        "Dental Radiology",
+        "Restorative Dentistry",
+        "Advanced Cosmetic Dentistry",
+        "Neuro-Dentistry",
+        "Genetic Dentistry"
       ]
     },
     "medical_sciences": {
@@ -536,10 +561,12 @@
       "departments": [
         "Civil Engineering Department",
         "Architecture Department",
-        "Surveying Engineering Department",
         "Electrical Engineering Department",
         "Computer Engineering Department",
-        "Biomedical Engineering Department"
+        "Mechanical Engineering Department",
+        "Chemical Engineering Department",
+        "Petroleum Engineering Department",
+        "Industrial Engineering Department"
       ]
     },
     "management": {
@@ -551,8 +578,12 @@
         "Contribute to community development and improving quality of life"
       ],
       "departments": [
-        "Management Department",
-        "Accounting Department"
+        "Business Administration Department",
+        "Accounting Department",
+        "Marketing Department",
+        "Finance Department",
+        "Human Resources Department",
+        "Management Information Systems Department"
       ]
     },
     "law": {
@@ -562,6 +593,16 @@
         "Provide high-quality education in human rights and law fields",
         "Develop legal knowledge and deep understanding of laws and regulations",
         "Contribute to achieving justice through applying legal knowledge"
+      ],
+      "specialties": [
+        "Civil Law",
+        "Criminal Law",
+        "Commercial Law",
+        "Administrative Law",
+        "Constitutional Law",
+        "International Law",
+        "Labor Law",
+        "Family Law"
       ]
     },
     "humanities": {
@@ -573,7 +614,11 @@
       ],
       "departments": [
         "Advocacy Department",
-        "Media Department"
+        "Media Department",
+        "Philosophy Department",
+        "History Department",
+        "Psychology Department",
+        "Sociology Department"
       ]
     },
     "community_development": {
@@ -582,6 +627,14 @@
       "goals": [
         "Provide high-quality education in community development and social work fields",
         "Contribute to community development and improving quality of life"
+      ],
+      "specialties": [
+        "Social Work",
+        "Local Community Development",
+        "Sustainable Development",
+        "Non-Profit Organization Management",
+        "Rural Development",
+        "Urban Development"
       ]
     },
     "computer_science": {
@@ -590,6 +643,16 @@
       "goals": [
         "Provide high-quality education in computer science and information technology fields",
         "Qualify students to become specialists in software design and development"
+      ],
+      "specialties": [
+        "Computer Science",
+        "Software Engineering",
+        "Information Systems",
+        "Information Security",
+        "Artificial Intelligence",
+        "Web Development",
+        "Database Systems",
+        "Networking"
       ]
     },
     "languages_translation": {
@@ -599,6 +662,16 @@
         "Provide high-quality education in languages and translation fields",
         "Develop linguistic knowledge and deep understanding of languages and cultures",
         "Contribute to facilitating linguistic communication between different cultures"
+      ],
+      "specialties": [
+        "Written Translation",
+        "Oral Translation",
+        "Simultaneous Translation",
+        "Literary Translation",
+        "Technical Translation",
+        "English Language",
+        "French Language",
+        "German Language"
       ]
     }
   },

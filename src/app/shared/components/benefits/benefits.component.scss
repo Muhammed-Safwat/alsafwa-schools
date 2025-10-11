@@ -9,7 +9,11 @@
 .about .display-6 {
   line-height: 1.2;
 }
-
+.about .top-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-color) !important;
+}
 .about .display-6 span {
   position: relative;
   color: var(--accent-color);

@@ -128,6 +128,7 @@ content: "";
 .history .core-values h3 {
   font-size: 1.8rem;
   font-weight: 700;
+  margin-bottom: 40px !important;
 }
 
 .history .core-values .value-card {
@@ -305,8 +306,8 @@ content: "";
 
 // University Highlights Styles
 .university-highlights {
-   
- 
+
+
 
   .highlights-grid {
     display: grid;
@@ -354,7 +355,7 @@ content: "";
           i {
             color: #28a745;
           }
-    
+
           &:hover {
             border-left-color: #28a745;
           }
@@ -381,4 +382,3 @@ content: "";
     }
   }
 }
- 
