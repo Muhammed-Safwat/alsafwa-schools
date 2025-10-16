@@ -52,6 +52,21 @@
             {{ 'header.platform' | translate }}
           </a>
         </li>
+        <li class="dropdown">
+          <div class="others-option d-flex align-items-center">
+            <!-- Language Switcher -->
+            <div class="option-item d-flex align-items-center me-3">
+              <app-language-switcher></app-language-switcher>
+            </div>
+
+            <div class="option-item d-flex align-items-center d-none d-xl-flex">
+              <div class="lang ms-3">
+                <a appAutoLanguageLink="/login"
+                   class="btn-primary fw-1">{{ 'header.login' | translate }}</a>
+              </div>
+            </div>
+          </div>
+        </li>
       </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
