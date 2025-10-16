@@ -27,7 +27,7 @@ body {
 }
 
 .header .logo img {
-  max-height: 60px;
+  max-height: 50px;
   margin-inline-end: 8px;
 }
 
@@ -89,7 +89,7 @@ body {
   .navmenu a:focus {
     color: var(--default-color);
     padding: 18px 15px;
-    font-size: 16px;
+    font-size: 14px;
     font-family: var(--nav-font);
     font-weight: 400;
     display: flex;
@@ -412,6 +412,7 @@ body {
       opacity: 0;
       transform: translateX(100%);
     }
+
     to {
       opacity: 1;
       transform: translateX(0);
@@ -428,6 +429,7 @@ body {
       opacity: 0;
       transform: translateX(-100%);
     }
+
     to {
       opacity: 1;
       transform: translateX(0);
@@ -493,7 +495,7 @@ body {
   text-align: center;
 }
 
-.others-option.outer-option{
+.others-option.outer-option {
   @media screen and (max-width: 1199px) {
     display: none !important;
   }

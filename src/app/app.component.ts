@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
 import { RouterOutlet, NavigationEnd, Router } from '@angular/router';
 import { PreloaderComponent } from './shared/components/preloader/preloader.component';
 import { LanguageService } from './shared/core/services/language.service';
+import { SEOService } from './shared/core/services/seo.service';
 import { filter } from 'rxjs/operators';
 
 declare var AOS: any;
@@ -15,10 +16,14 @@ declare var PureCounter: any;
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
-  title = 'Alsafwa University';
+  title = 'Alsafwa Schools';
   private routerSubscription: any;
 
-  constructor(private router: Router, private languageService: LanguageService) {
+  constructor(
+    private router: Router,
+    private languageService: LanguageService,
+    private seoService: SEOService
+  ) {
     console.log('AppComponent: Constructor called');
   }
 
@@ -34,6 +39,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe((event) => {
         console.log('AppComponent: Route changed to:', event.url);
+        this.updatePageSEO(event.url);
         setTimeout(() => {
           this.refreshAOS();
         }, 100);
@@ -94,5 +100,15 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     }
   }
 
+  private updatePageSEO(url: string) {
+    // Extract page name from URL
+    const urlParts = url.split('/');
+    const page = urlParts[urlParts.length - 1] || 'home';
 
+    // Generate SEO data for the current page
+    const seoData = this.seoService.generatePageSEO(page);
+
+    // Update SEO
+    this.seoService.updateSEO(seoData);
+  }
 }

@@ -1,14 +1,11 @@
 {
   "header": {
     "home": "Home",
-    "about": "About University",
-    "admissions": "Admissions",
-    "faculty": "Faculties",
-    "institutes": "Institutes",
-    "research": "Research Center",
+    "about": "About Us",
+    "institutes": "Academic Levels",
     "remote_learning": "Remote Learning",
     "contact": "Contact Us",
-    "login": "Login"
+    "platform": "Platform"
   },
   "footer": {
     "important_links": "Important Links",
@@ -37,8 +34,8 @@
     "contact_us": "Contact Us",
     "copyright": "All Rights Reserved"
   },
-  "university": {
-    "name": "Safwat Al Safwa International University",
+  "schools": {
+    "name": "Safwat Al Safwa International Schools",
     "address": "King Fahd Street",
     "location": "Riyadh, Saudi Arabia",
     "phone": "Phone:",
@@ -49,20 +46,20 @@
     "english": "English"
   },
   "banner": {
-    "title": "Towards a Bright Future with Knowledge and Learning",
-    "description": "Safwat Al Safwa University is committed to providing high-quality education to graduate distinguished students who compete with students from the finest universities. We focus on interactive, self-directed, and collaborative learning, scientific research, and training to establish knowledge.",
-    "start_journey": "Start Your Educational Journey",
+    "title": "The Launchpad for Building the Future Generation",
+    "description": "Safwat Al Safwa Schools are the true starting point for shaping students’ character — morally, academically, and professionally. We empower them to understand their community and reality with confidence and face future challenges with awareness and excellence. With extensive experience in teaching and curriculum development, we provide meaningful education that instills values and shapes the vision of a bright tomorrow.",
+    "start_journey": "Start Your Journey to Excellence",
     "explore_programs": "Explore Our Programs",
-    "why_choose_us": "Why Choose Us",
-    "research_funding": "Funded Research Projects",
-    "academic_programs": "Academic Programs",
-    "open_day": "Student Open Day",
+    "why_choose_us": "Why Choose Us?",
+    "research_funding": "Outstanding Scientific Activities",
+    "academic_programs": "Modern Educational Programs",
+    "open_day": "Open Day",
     "application_workshop": "Application Workshop",
     "international_students_meeting": "International Students Orientation",
     "register_now": "Register Now",
     "stats": {
-      "research_funding_count": "250+",
-      "academic_programs_count": "120+"
+      "research_funding_count": "350+",
+      "academic_programs_count": "200+"
     },
     "dates": {
       "november_15": "November 15",
@@ -71,42 +68,42 @@
     }
   },
   "about": {
-    "title": "Safwat Al Safwa University, <span>Excellence in Education and Knowledge</span>",
-    "description": "Safwat Al Safwa University is committed to providing high-quality education to graduate distinguished students who compete with students from the finest universities. We focus on interactive, self-directed, and collaborative learning, scientific research, and training to establish knowledge. We provide continuous education for graduates and community members to keep pace with rapid changes and self-development.",
+    "title": "Safwat Al Safwa Schools<br> <span>Towards Creative Education and a Bright Future</span>",
+    "description": "At Safwat Al Safwa Schools, we believe every student has the potential to excel and stand out. We offer a comprehensive learning experience that balances values, ethics, and practical knowledge, while focusing on developing leadership and creative skills. We prepare confident, innovative students ready to face future challenges and achieve their ambitions to the fullest.",
     "years_excellence": "Years of Excellence",
     "students": "Students",
     "faculty_members": "Faculty Members",
-    "director_name": "Prof. Dr. Ahmed Al-Aqeeli",
-    "director_title": "University Director",
-    "campus_alt": "University Campus",
+    "director_name": "Prof. Dr. Ahmed Al-Aqili",
+    "director_title": "School Director",
+    "campus_alt": "School Campus",
     "mission": "Our Mission",
-    "mission_text": "To cultivate and develop good character and self-confidence, and provide high-quality education with practical application to graduate distinguished students. To promote creativity, protect human rights, and exchange knowledge with specialized universities and institutions.",
+    "mission_text": "Providing integrated education that instills values, strengthens self-confidence, and develops students’ thinking and creative skills. We aim to create an inspiring learning environment that encourages continuous learning and fosters positive interaction among students, teachers, and the community.",
     "vision": "Our Vision",
-    "vision_text": "To provide high-quality education with continuous updating of curricula. To provide an inspiring and innovative educational environment with a focus on interactive, self-directed, and collaborative learning. To enhance distance learning and academic integration to prepare future leaders.",
+    "vision_text": "To become a leading and inspiring model in private education in the Kingdom, combining academic excellence, personal development, and future-ready skills. We adopt the latest educational and technological methods to ensure modern and impactful learning.",
     "values": "Our Values",
-    "values_text": "Striving for excellence in education, promoting transparency and accountability, and supporting scientific research. Active participation, respecting data privacy, and promoting creative thinking to solve challenges."
+    "values_text": "Excellence – Creativity – Responsibility – Cooperation – Integrity – Love of Learning – Respect for Others – Innovation – Teamwork – Community Service"
   },
   "benefits": {
-    "title": "Safwat Al Safwa University",
     "topTitle": "Benefits of Studying",
-    "description": "We provide our students with a comprehensive educational experience that opens wide horizons for success and excellence in their professional and personal lives. We strive to provide an integrated educational environment that combines academic quality, scientific research, and student activities.",
-    "useful_education": "Useful and Productive Education",
-    "useful_education_text": "We provide useful and productive education and adequate training for success in professional life in a rapidly evolving world",
-    "self_development": "Self-Development and Critical Thinking",
-    "self_development_text": "Self-development through learning critical and creative thinking to solve problems",
-    "international_certificate": "Internationally Recognized Certificate",
-    "international_certificate_text": "Obtaining an internationally recognized certificate that opens wide horizons for work and study",
-    "job_opportunities": "Distinguished Job Opportunities",
-    "job_opportunities_text": "Easy access to job opportunities in the private and public sectors in local and global markets",
-    "community_contribution": "Contributing to Community Development",
-    "community_contribution_text": "Effective contribution to community development through qualified graduates",
+    "title": "At Safwat Al Safwa Schools",
+    "description": "We provide our students with a comprehensive educational experience aimed at developing their character, enhancing their academic and social skills, instilling strong values and ethics, and inspiring creativity and excellence for their future life.",
+    "useful_education": "Practical and Valuable Education",
+    "useful_education_text": "Providing practical and meaningful education that enables students to succeed academically and professionally, preparing them to face future challenges.",
+    "self_development": "Self-Development and Leadership Skills",
+    "self_development_text": "Enhancing self-confidence, fostering critical and creative thinking, and teaching effective communication and teamwork skills.",
+    "international_certificate": "Internationally Recognized Certificates",
+    "international_certificate_text": "Obtaining internationally recognized certificates that open wide opportunities for work and study locally and globally.",
+    "job_opportunities": "Outstanding Future Opportunities",
+    "job_opportunities_text": "Facilitating access to distinguished job opportunities in both the public and private sectors, locally and internationally.",
+    "community_contribution": "Contributing to the Community",
+    "community_contribution_text": "Cultivating a sense of social responsibility through student and graduate participation in community projects and initiatives.",
     "continuous_education": "Continuous Education",
-    "continuous_education_text": "We provide continuous education for graduates and interested community members to keep pace with rapid changes"
+    "continuous_education_text": "Providing continuous education programs for students and community members to keep pace with scientific and knowledge developments."
   },
   "contact": {
-    "university_address": "University Address",
+    "university_address": "Schools Address",
     "university_location": "Riyadh, Saudi Arabia",
-    "university_name": "Safwat Al Safwa International University",
+    "university_name": "Safwat Al Safwa International Schools",
     "email": "Email",
     "social_media": "Social Media",
     "working_hours": "Working Hours",
@@ -121,81 +118,81 @@
     "send_message": "Send Message"
   },
   "degrees": {
-    "title": "Degrees Awarded by the University",
-    "description": "The University Council awards the following degrees based on the recommendation of the College or Institute Council:",
-    "diploma": "Diploma Degree",
-    "diploma_subtitle": "Associate Diploma",
-    "diploma_description": "An academic degree that qualifies the student to work in the chosen professional field",
-    "bachelor": "Bachelor's Degree",
-    "bachelor_subtitle": "Bachelor's",
-    "bachelor_description": "Bachelor's degree in various academic specializations",
-    "specialization": "Specialization Degree",
-    "specialization_subtitle": "Higher Diploma",
-    "specialization_description": "A specialized degree in a specific field after bachelor's",
-    "high_specialization": "High Specialization Degree",
-    "high_specialization_subtitle": "Master's",
-    "high_specialization_description": "Master's degree in various specializations with research opportunities",
-    "global_specialization": "Global Specialization Degree",
-    "global_specialization_subtitle": "PhD",
-    "global_specialization_description": "The highest academic degree in specialization with advanced scientific research"
+    "title": "Certificates Awarded by the Schools",
+    "description": "The Schools Council awards the following certificates based on the recommendation of the School Council:",
+    "diploma": "Elementary School Certificate",
+    "diploma_subtitle": "Elementary School Completion Certificate",
+    "diploma_description": "A certificate that qualifies the student to move to the intermediate stage",
+    "bachelor": "Intermediate School Certificate",
+    "bachelor_subtitle": "Intermediate School Completion Certificate",
+    "bachelor_description": "A certificate that qualifies the student to move to the secondary stage",
+    "specialization": "Secondary School Certificate",
+    "specialization_subtitle": "Secondary School Completion Certificate",
+    "specialization_description": "A certificate that qualifies the student to join university or the job market",
+    "high_specialization": "Excellence Certificate",
+    "high_specialization_subtitle": "Academic Excellence Certificate",
+    "high_specialization_description": "A certificate awarded to outstanding students in all stages",
+    "global_specialization": "Achievement Certificate",
+    "global_specialization_subtitle": "Personal Achievement Certificate",
+    "global_specialization_description": "A certificate awarded to students distinguished in activities and talents"
   },
   "example_card": {
-    "university_name_ar": "جامعة صفوت الصفوة الدولية",
-    "university_name_en": "Safwat Al-Safwa International University",
-    "welcome_text": "Welcome to Safwat Al-Safwa International University, where we strive to provide distinguished education that meets the needs of students in the 21st century.",
+    "university_name_ar": "مدارس صفوت الصفوة الدولية",
+    "university_name_en": "Safwat Al-Safwa International Schools",
+    "welcome_text": "Welcome to Safwat Al-Safwa International Schools, where we strive to provide distinguished education that meets the needs of students in the 21st century.",
     "learn_more": "Learn About Us",
     "contact_us": "Contact Us",
     "last_update": "Last Updated: December 2024"
   },
   "featured_programs": {
-    "title": "Featured Programs",
-    "description": "Safwa University offers a range of distinguished academic programs that combine quality, knowledge, and practical skills to prepare future leaders.",
+    "title": "Featured Educational Programs",
+    "description": "Safwa Schools offer a range of distinguished educational programs that combine quality, knowledge, and practical skills to prepare future leaders.",
     "all_programs": "All Programs",
-    "bachelor": "Bachelor's",
-    "master": "Master's",
-    "certificates": "Professional Certificates",
-    "computer_science": "Computer Science",
-    "computer_science_alt": "Computer Science",
-    "business_management": "Business Management",
-    "business_management_alt": "Business Management",
-    "medical_sciences": "Medical Sciences",
-    "medical_sciences_alt": "Medical Sciences",
-    "environmental_studies": "Environmental Studies",
-    "environmental_studies_alt": "Environmental Studies",
-    "mechanical_engineering": "Mechanical Engineering",
-    "mechanical_engineering_alt": "Mechanical Engineering",
-    "data_analysis": "Data Analysis",
-    "data_analysis_alt": "Data Analysis",
+    "bachelor": "Elementary Stage",
+    "master": "Intermediate Stage",
+    "certificates": "Secondary Stage",
+    "computer_science": "Sciences and Mathematics",
+    "computer_science_alt": "Sciences and Mathematics",
+    "business_management": "Arabic and English Languages",
+    "business_management_alt": "Arabic and English Languages",
+    "medical_sciences": "Social Sciences",
+    "medical_sciences_alt": "Social Sciences",
+    "environmental_studies": "Islamic Education",
+    "environmental_studies_alt": "Islamic Education",
+    "mechanical_engineering": "Sports Activities",
+    "mechanical_engineering_alt": "Sports Activities",
+    "data_analysis": "Artistic Activities",
+    "data_analysis_alt": "Artistic Activities",
     "years": "years",
     "hours": "hours",
     "semesters": "semesters",
     "spring_only": "spring only",
     "year_round": "year-round",
     "months": "months",
-    "computer_science_desc": "A program focused on programming, artificial intelligence, and information security to prepare graduates capable of leading digital transformation projects.",
-    "business_management_desc": "A program that integrates modern theories with practical application to prepare leaders and entrepreneurs capable of competing in the job market.",
-    "medical_sciences_desc": "An integrated program in basic and clinical medical sciences aimed at preparing a distinguished generation in healthcare fields.",
-    "environmental_studies_desc": "A program focused on sustainability and finding innovative solutions to global and local environmental challenges.",
-    "mechanical_engineering_desc": "A program that develops research and design skills in energy, manufacturing, and advanced mechanical technologies.",
-    "data_analysis_desc": "A practical training program focused on data analysis tools, statistics, and artificial intelligence to prepare qualified personnel for the job market.",
+    "computer_science_desc": "A program focused on sciences and mathematics to develop logical thinking and scientific analysis skills among students.",
+    "business_management_desc": "A program that develops Arabic and English language skills to enable students to communicate effectively and express themselves.",
+    "medical_sciences_desc": "An integrated program in social sciences that helps students understand society and interact with it positively.",
+    "environmental_studies_desc": "A program focused on Islamic education and instilling values and moral principles in students.",
+    "mechanical_engineering_desc": "A program that develops sports and physical skills and enhances team spirit and fair competition.",
+    "data_analysis_desc": "A program focused on artistic and creative activities to develop talents and creativity among students.",
     "learn_more": "Learn More"
   },
   "history": {
-    "about_university": "About the University",
+    "about_university": "About the Schools",
     "title": "Vision, Mission & Goals",
-    "description": "Safwat Al Safwa University is committed to providing high-quality education to graduate distinguished students who compete with students from the finest universities. We focus on interactive, self-directed, and collaborative learning, scientific research, and training to establish knowledge. We provide continuous education for graduates and interested community members to keep pace with rapid changes for self-development and efficiency enhancement.",
-    "founding_2015": "Establishment of Safwat Al Safwa University as one of the leading universities in Saudi Arabia",
-    "opening_2018": "Opening the first specialized colleges and starting bachelor's programs in various specializations",
-    "graduate_2020": "Launching graduate programs, master's, and PhD in various specializations",
-    "expansion_2023": "University expansion and opening new branches and advanced educational programs",
-    "campus_alt": "University Campus",
+    "description": "Safwat Al Safwa Schools are committed to providing high-quality education to graduate distinguished students who compete with students from the finest schools. We focus on interactive, self-directed, and collaborative learning, scientific research, and training to establish knowledge. We provide continuous education for students and interested community members to keep pace with rapid changes for self-development and efficiency enhancement.",
+    "founding_2015": "Establishment of Safwat Al Safwa Schools as one of the leading schools in Saudi Arabia",
+    "opening_2018": "Opening the first academic stages and starting educational programs in various stages",
+    "graduate_2020": "Launching advanced educational programs and development activities in various stages",
+    "expansion_2023": "Schools expansion and opening new branches and advanced educational programs",
+    "campus_alt": "School Campus",
     "mission": "Mission",
-    "mission_text": "To cultivate and develop good character and self-confidence, and provide high-quality education with practical application to equip students with scientific and practical tools before graduation to produce distinguished students. To promote creativity in finding innovative solutions to current and expected challenges, provide distinguished research that contributes to sustainable development, protect human rights, and enhance knowledge exchange with specialized universities and institutions.",
+    "mission_text": "To cultivate and develop good character and self-confidence, and provide high-quality education with practical application to equip students with scientific and practical tools before graduation to produce distinguished students. To promote creativity in finding innovative solutions to current and expected challenges, provide distinguished research that contributes to sustainable development, protect human rights, and enhance knowledge exchange with specialized schools and institutions.",
     "vision": "Vision",
-    "vision_text": "To provide high-quality education, continuous updating of curricula to match scientific progress, provide continuous education opportunities for graduates and interested community members to keep pace with rapid scientific development and rehabilitation to meet current and future labor market needs, provide an inspiring and innovative educational environment, focus on interactive, self-directed, and collaborative learning methods and scientific research to establish knowledge, enhance distance learning to obtain scientific material at the appropriate time and reduce study costs, horizontal and vertical integration of curricula, study by semester system to accommodate different capabilities and abilities of each student, conduct research and practical studies to solve current and expected challenges, graduate highly qualified students with insightful vision in various university specializations to be future leaders, respect others' ideas and beliefs, evaluate practical experiences, contribute to community service, prepare future leaders, support sustainable development, and cooperate with specialized universities and institutions internationally.",
+    "vision_text": "To provide high-quality education, continuous updating of curricula to match scientific progress, provide continuous education opportunities for students and interested community members to keep pace with rapid scientific development and rehabilitation to meet current and future labor market needs, provide an inspiring and innovative educational environment, focus on interactive, self-directed, and collaborative learning methods and scientific research to establish knowledge, enhance distance learning to obtain scientific material at the appropriate time and reduce study costs, horizontal and vertical integration of curricula, study by semester system to accommodate different capabilities and abilities of each student, conduct research and practical studies to solve current and expected challenges, graduate highly qualified students with insightful vision in various school specializations to be future leaders, respect others' ideas and beliefs, evaluate practical experiences, contribute to community service, prepare future leaders, support sustainable development, and cooperate with specialized schools and institutions internationally.",
     "goals": "Goals",
     "goals_text": "To qualify students to become specialists in their field, support scientific research and innovation in various fields, enhance knowledge and understanding in various scientific fields, and contribute to community development.",
-    "university_highlights": "University Highlights",
+    "university_highlights": "Schools Highlights",
     "accreditation": "Accredited Academic Programs",
     "diverse_students": "Students from Various Nationalities",
     "modern_curriculum": "Modern Curriculum",
@@ -208,17 +205,17 @@
     "innovation": "Innovation",
     "innovation_text": "Promoting creative thinking to find practical solutions to challenges",
     "global_vision": "Global Vision",
-    "global_vision_text": "Cooperation with specialized universities and institutions internationally"
+    "global_vision_text": "Cooperation with specialized schools and institutions internationally"
   },
   "institutes": {
-    "title": "Institutes",
-    "description": "We provide specialized educational and training programs that combine science and practical training to acquire practical skills",
-    "institutes_title": "Institutes",
-    "arabic_language_institute": "Arabic Language Institute",
-    "arabic_language_description": "Dedicated to teaching Arabic to non-native speakers through a comprehensive curriculum and modern teaching methods to develop reading, writing, speaking, and listening skills",
-    "applied_sciences_institute": "Applied Sciences Institute",
-    "applied_sciences_description": "Provides specialized educational and training programs that combine science and practical training to help students acquire practical skills and rehabilitate the unemployed according to market requirements",
-    "institute_goals": "Institute Goals:",
+    "title": "Academic Levels",
+    "description": "We provide specialized educational programs that combine science and practical training to acquire practical skills in various academic levels",
+    "institutes_title": "Academic Levels",
+    "arabic_language_institute": "Elementary Stage",
+    "arabic_language_description": "The elementary stage is dedicated to teaching students the basics through a comprehensive curriculum and modern teaching methods to develop reading, writing, speaking, and listening skills",
+    "applied_sciences_institute": "Intermediate Stage",
+    "applied_sciences_description": "Provides specialized educational programs that combine science and practical training to help students acquire practical skills and prepare students according to secondary stage requirements",
+    "institute_goals": "Stage Goals:",
     "available_programs": "Available Programs:",
     "arabic_goals": [
       "Develop reading, writing, speaking, and listening skills",
@@ -230,8 +227,8 @@
       "Provide specialized educational and training programs",
       "Combine science and practical training",
       "Help students acquire required practical skills",
-      "Rehabilitate the unemployed",
-      "Meet labor market requirements"
+      "Prepare students for secondary stage",
+      "Meet secondary stage requirements"
     ],
     "arabic_programs": [
       "Basic Arabic Language Program",
@@ -269,7 +266,7 @@
       "Promote creativity to find innovative solutions to current and expected challenges",
       "Provide distinguished research that contributes to sustainable development",
       "Protect human rights",
-      "Promote knowledge exchange with specialized universities and institutions"
+      "Promote knowledge exchange with specialized schools and institutions"
     ],
     "goals_items": [
       "Qualify students to become specialists in their fields",
@@ -278,7 +275,7 @@
       "Contribute to community development",
       "Prepare future leaders",
       "Support sustainable development",
-      "Cooperate with specialized universities and institutions"
+      "Cooperate with specialized schools and institutions"
     ]
   },
   "principles": {
@@ -307,18 +304,18 @@
   },
   "recent_news": {
     "title": "Recent News",
-    "description": "Follow the latest news, events, and activities at Safwa University",
+    "description": "Follow the latest news, events, and activities at Safwa Schools",
     "events": "Events",
     "scholarships": "Scholarships",
     "education": "Education",
-    "anniversary_celebration": "University Celebrates 10th Anniversary",
-    "anniversary_description": "Safwat Al-Safwa University celebrated its 10th anniversary with the presence of senior officials and academics. The celebration witnessed the honoring of outstanding students and distinguished faculty members, in addition to announcing new development projects aimed at enhancing educational and research quality.",
+    "anniversary_celebration": "Schools Celebrate 10th Anniversary",
+    "anniversary_description": "Safwat Al-Safwa Schools celebrated their 10th anniversary with the presence of senior officials and academics. The celebration witnessed the honoring of outstanding students and distinguished faculty members, in addition to announcing new development projects aimed at enhancing educational and research quality.",
     "anniversary_date": "September 15, 2025",
     "scholarship_program": "Launch of New Scholarship Program",
-    "scholarship_description": "The university announced the launch of a comprehensive scholarship program targeting outstanding students from various academic levels. The program covers full tuition fees in addition to a monthly stipend and free study materials for eligible students.",
+    "scholarship_description": "The schools announced the launch of a comprehensive scholarship program targeting outstanding students from various academic levels. The program covers full tuition fees in addition to a monthly stipend and free study materials for eligible students.",
     "scholarship_date": "September 10, 2025",
     "lab_opening": "Opening of Advanced Scientific Laboratories",
-    "lab_description": "A group of advanced scientific laboratories was opened in the faculties of medicine, engineering, and sciences, equipped with the latest technologies and scientific equipment to provide an excellent educational and research environment for students and faculty members.",
+    "lab_description": "A group of advanced scientific laboratories was opened in various stages, equipped with the latest technologies and scientific equipment to provide an excellent educational and research environment for students and faculty members.",
     "lab_date": "September 5, 2025"
   },
   "remote_learning": {
@@ -338,9 +335,9 @@
     "learning_materials": "Learning Materials:",
     "available_fields": "Available Fields:",
     "synchronous_features_list": [
-      "No need to travel to campus",
+      "No need to travel to school",
       "Saves time and reduces study costs",
-      "Direct interaction with instructor and colleagues",
+      "Direct interaction with teacher and colleagues",
       "Ability to ask questions and get immediate answers",
       "Screen and material sharing",
       "Recording lectures for later review"
@@ -378,11 +375,11 @@
       "Discussion forums"
     ],
     "fields_list": [
-      "Academic Programs",
+      "Educational Programs",
       "Training Courses",
       "Professional Certificates",
       "Professional Development Programs",
-      "Graduate Studies",
+      "Advanced Studies",
       "Specialized Programs"
     ]
   },
@@ -393,7 +390,7 @@
     "scientific_research": "Scientific Research",
     "specialized_studies": "Specialized Studies",
     "scientific_publication": "Scientific Publication",
-    "scientific_research_description": "The center conducts more research and studies to achieve the university's goals in various scientific and academic fields",
+    "scientific_research_description": "The center conducts more research and studies to achieve the schools' goals in various scientific and academic fields",
     "specialized_studies_description": "We provide specialized studies in various fields to achieve security, peace, and sustainable development in society",
     "scientific_publication_description": "Publishing research and studies in 246 volumes to be a beacon of science and knowledge in various fields",
     "research_goals": "Research Goals:",
@@ -449,20 +446,20 @@
     ]
   },
   "stats": {
-    "title": "University Statistics",
-    "description": "The university provides a leading educational experience that combines quality, knowledge, and scientific research, with an academic environment that stimulates creativity and innovation to serve society locally and internationally.",
+    "title": "Schools Statistics",
+    "description": "The schools provide a leading educational experience that combines quality, knowledge, and scientific research, with an academic environment that stimulates creativity and innovation to serve society locally and internationally.",
     "learn_more": "Learn More",
     "virtual_tour": "Virtual Tour",
-    "academic_programs": "Academic Programs",
+    "academic_programs": "Educational Programs",
     "research_funding": "Funded Research Projects"
   },
   "vision": {
     "title": "Our Vision",
-    "description": "We strive to achieve a comprehensive vision that places Safwat Al-Safwa University at the forefront",
+    "description": "We strive to achieve a comprehensive vision that places Safwat Al-Safwa Schools at the forefront",
     "basic_vision": "Basic Vision",
     "basic_vision_text": "Providing high-quality education with continuous updating of curricula to match scientific progress",
     "continuous_education": "Continuous Education",
-    "continuous_education_text": "Providing continuous education opportunities for graduates and interested community members to keep pace with rapid scientific development",
+    "continuous_education_text": "Providing continuous education opportunities for students and interested community members to keep pace with rapid scientific development",
     "educational_environment": "Educational Environment",
     "educational_environment_text": "Providing an inspiring and innovative educational environment with a focus on interactive, self-directed, and collaborative learning",
     "distance_learning": "Distance Learning",
@@ -472,14 +469,14 @@
     "scientific_research": "Scientific Research",
     "scientific_research_text": "Conducting practical research and studies to solve current and expected challenges",
     "leadership_preparation": "Leadership Preparation",
-    "leadership_preparation_text": "Graduating highly qualified students with insightful vision in various university specializations",
+    "leadership_preparation_text": "Graduating highly qualified students with insightful vision in various school specializations",
     "international_cooperation": "International Cooperation",
-    "international_cooperation_text": "Cooperation with specialized universities and institutions with establishing strong international partnerships"
+    "international_cooperation_text": "Cooperation with specialized schools and institutions with establishing strong international partnerships"
   },
   "faculty": {
-    "title": "Faculties",
-    "description": "Learn about the faculties that provide education at the university",
-    "faculties_title": "Faculties",
+    "title": "Faculty",
+    "description": "Learn about the faculty that provides education at the schools",
+    "faculties_title": "Faculty",
     "faculty_goals": "Faculty Goals:",
     "available_specialties": "Available Specialties:",
     "faculty_departments": "Faculty Departments:",
@@ -681,13 +678,13 @@
     "home": "Home"
   },
   "admissions": {
-    "main_title": "Start Your Academic Journey Today",
-    "main_description": "Safwat Al Safwa University is committed to providing high-quality education to graduate distinguished students who compete with students from the finest universities. We focus on interactive, self-directed, and collaborative learning, scientific research, and training to establish knowledge.",
+    "main_title": "Start Your Educational Journey Today",
+    "main_description": "Safwat Al Safwa Schools are committed to providing high-quality education to graduate distinguished students who compete with students from the finest schools. We focus on interactive, self-directed, and collaborative learning, scientific research, and training to establish knowledge.",
     "how_to_apply": "How to Apply",
     "steps": {
       "step1": {
         "title": "Submit Application",
-        "description": "Fill out the online application form and submit all required documents through the university website"
+        "description": "Fill out the online application form and submit all required documents through the schools website"
       },
       "step2": {
         "title": "Submit Documents",
@@ -719,7 +716,7 @@
     "requirements_list": {
       "academic_records": {
         "title": "Academic Records",
-        "description": "High school diploma or equivalent with official transcript"
+        "description": "Previous stage certificate or equivalent with official transcript"
       },
       "recommendation_letters": {
         "title": "Recommendation Letters",
@@ -727,11 +724,11 @@
       },
       "personal_statement": {
         "title": "Personal Statement",
-        "description": "Write a personal statement explaining your academic and professional goals and reasons for choosing the university"
+        "description": "Write a personal statement explaining your academic and professional goals and reasons for choosing the schools"
       },
       "standardized_tests": {
         "title": "Standardized Tests",
-        "description": "Results of standardized tests or English language tests according to the required specialization"
+        "description": "Results of standardized tests or English language tests according to the required stage"
       }
     },
     "request_info": {
@@ -741,50 +738,50 @@
         "name_placeholder": "Full Name",
         "email_placeholder": "Email Address",
         "phone_placeholder": "Phone Number",
-        "program_placeholder": "Desired Program",
+        "program_placeholder": "Desired Stage",
         "message_placeholder": "Questions or Comments",
         "submit_button": "Submit Request",
         "programs": {
-          "bachelor": "Bachelor's",
-          "master": "Master's",
-          "phd": "PhD",
-          "diploma": "Diploma"
+          "bachelor": "Elementary Stage",
+          "master": "Intermediate Stage",
+          "phd": "Secondary Stage",
+          "diploma": "Remote Learning"
         }
       }
     },
     "cta": {
       "campus_visit": {
-        "title": "Campus Visit",
-        "description": "Learn about the university facilities and distinguished learning environment through a campus visit",
+        "title": "School Visit",
+        "description": "Learn about the schools facilities and distinguished learning environment through a school visit",
         "button": "Book Visit"
       },
       "ready_to_apply": {
         "title": "Ready to Apply?",
-        "description": "Start your academic journey with Safwat Al Safwa University and be part of our distinguished community",
+        "description": "Start your educational journey with Safwat Al Safwa Schools and be part of our distinguished community",
         "button": "Start Application"
       }
     }
   },
   "page_titles": {
     "about": {
-      "title": "About University",
-      "description": "Safwat Al-Safwa University is committed to providing high-quality education to graduate distinguished students who compete with students from the finest universities",
-      "current_page": "About University"
+      "title": "About Schools",
+      "description": "Safwat Al-Safwa Schools are committed to providing high-quality education to graduate distinguished students who compete with students from the finest schools",
+      "current_page": "About Schools"
     },
     "admissions": {
-      "title": "University Admissions",
-      "description": "Learn about admission requirements and available programs at Safwat Al-Safwa University",
+      "title": "Admissions & Registration",
+      "description": "Start your educational journey with Safwat Al-Safwa Schools and discover the distinguished educational opportunities available to you",
       "current_page": "Admissions"
     },
     "faculty": {
-      "title": "Faculties",
-      "description": "Learn about the faculties that provide education at the university",
-      "current_page": "Faculties"
+      "title": "Faculty",
+      "description": "Learn about the faculty that provides education at the schools",
+      "current_page": "Faculty"
     },
     "institutes": {
-      "title": "Institutes",
-      "description": "Discover the specialized institutes at Safwat Al-Safwa University",
-      "current_page": "Institutes"
+      "title": "Academic Levels",
+      "description": "Discover the specialized academic levels at Safwat Al-Safwa Schools",
+      "current_page": "Academic Levels"
     },
     "contact": {
       "title": "Contact Us",
@@ -798,7 +795,7 @@
     },
     "admissions": {
       "title": "Admissions & Registration",
-      "description": "Learn how to apply to the university and important admission deadlines",
+      "description": "Learn how to apply to the schools and important admission deadlines",
       "current_page": "Admissions"
     },
     "remote_learning": {
@@ -813,12 +810,12 @@
     },
     "privacy": {
       "title": "Privacy Policy",
-      "description": "Learn about the university's privacy policy",
+      "description": "Learn about the schools' privacy policy",
       "current_page": "Privacy Policy"
     },
     "terms_of_service": {
       "title": "Terms & Conditions",
-      "description": "Learn about the university's terms and conditions",
+      "description": "Learn about the schools' terms and conditions",
       "current_page": "Terms & Conditions"
     },
     "error_page": {

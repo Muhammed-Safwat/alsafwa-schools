@@ -3,47 +3,54 @@
   <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
     <a appAutoLanguageLink="/"
        class="logo gap-2 d-flex align-items-center">
-      <img src="/assets/img/Safwat-Al-Safwa-International-University.png"
-           alt="Safwat Al Safwa International University">
+      <img src="/assets/img/website_banner_schools.png"
+           alt="Safwat Al Safwa International Schools">
     </a>
 
     <nav id="navmenu"
          class="navmenu">
       <ul>
-        <li><a appAutoLanguageLink="/"
+        <li>
+          <a appAutoLanguageLink="/"
              routerLinkActive="active"
-             [routerLinkActiveOptions]="{exact: true}">{{ 'header.home' | translate }}</a></li>
-        <li><a appAutoLanguageLink="/about"
-             routerLinkActive="active">{{ 'header.about' | translate }}</a></li>
-        <li><a appAutoLanguageLink="/admissions"
-             routerLinkActive="active">{{ 'header.admissions' | translate }}</a></li>
-        <li><a appAutoLanguageLink="/faculty"
-             routerLinkActive="active">{{ 'header.faculty' | translate }}</a></li>
-        <li><a appAutoLanguageLink="/institutes"
-             routerLinkActive="active">{{ 'header.institutes' | translate }}</a></li>
-        <li><a appAutoLanguageLink="/research"
-             routerLinkActive="active">{{ 'header.research' | translate }}</a></li>
-        <li><a appAutoLanguageLink="/remote-learning"
-             routerLinkActive="active">{{ 'header.remote_learning' | translate }}</a></li>
-        <li class="dropdown">
-          <a appAutoLanguageLink="/contact"
-             routerLinkActive="active"><span>{{ 'header.contact' | translate }}</span> </a>
+             [routerLinkActiveOptions]="{ exact: true }">
+            {{ 'header.home' | translate }}
+          </a>
         </li>
-        <li class="dropdown">
-          <div class="others-option d-flex align-items-center">
-            <!-- Language Switcher -->
-            <div class="option-item d-flex align-items-center me-3">
-              <app-language-switcher></app-language-switcher>
-            </div>
-          
-            <!-- Login -->
-            <div class="option-item d-flex align-items-center d-none d-xl-flex">
-              <div class="lang ms-3">
-                <a appAutoLanguageLink="/login"
-                    class="btn-primary fw-1">{{ 'header.login' | translate }}</a>
-              </div>
-            </div>
-          </div>
+
+        <li>
+          <a appAutoLanguageLink="/about"
+             routerLinkActive="active">
+            {{ 'header.about' | translate }}
+          </a>
+        </li>
+
+        <li>
+          <a appAutoLanguageLink="/institutes"
+             routerLinkActive="active">
+            {{ 'header.institutes' | translate }}
+          </a>
+        </li>
+
+        <li>
+          <a appAutoLanguageLink="/remote-learning"
+             routerLinkActive="active">
+            {{ 'header.remote_learning' | translate }}
+          </a>
+        </li>
+
+        <li>
+          <a appAutoLanguageLink="/contact"
+             routerLinkActive="active">
+            {{ 'header.contact' | translate }}
+          </a>
+        </li>
+
+        <li>
+          <a appAutoLanguageLink="/platform"
+             routerLinkActive="active">
+            {{ 'header.platform' | translate }}
+          </a>
         </li>
       </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>

@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageSwitcherComponent } from "../../language-switcher/language-switcher.component";
 import { AutoLanguageLinkDirective } from '../../../core/directives/auto-language-link.directive';
- 
+
 @Component({
   selector: 'app-header',
   imports: [CommonModule, RouterModule, TranslateModule, LanguageSwitcherComponent, AutoLanguageLinkDirective],
@@ -23,7 +23,6 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   private initMobileNav() {
-    // Wait for DOM to be ready
     setTimeout(() => {
       const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
       const navmenu = document.querySelector('#navmenu');

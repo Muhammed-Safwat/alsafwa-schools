@@ -8,7 +8,8 @@
       <div class="col-lg-6 pe-lg-5"
            data-aos="fade-inset-inline-end"
            data-aos-delay="200">
-        <h2 class="display-6 fw-bold mb-4" [innerHTML]="'about.title' | translate"></h2>
+        <h2 class="display-6 fw-bold mb-4"
+            [innerHTML]="'about.title' | translate"></h2>
         <p class="lead mb-4">
           {{ 'about.description' | translate }}
         </p>
@@ -43,7 +44,7 @@
           <div class="image-stack-item image-stack-item-top"
                data-aos="zoom-in"
                data-aos-delay="400">
-            <img src="/assets/img/education/hero-bg.svg"
+            <img src="/assets/img/hero_bg_shools.svg"
                  [alt]="'about.campus_alt' | translate"
                  class="img-fluid rounded-4 shadow-lg">
           </div>
@@ -51,7 +52,8 @@
       </div>
     </div>
 
-    <div *ngIf="showMission" class="row mission-vision-row g-4">
+    <div *ngIf="showMission"
+         class="row mission-vision-row g-4">
       <div class="col-md-4"
            data-aos="fade-up"
            data-aos-delay="100">

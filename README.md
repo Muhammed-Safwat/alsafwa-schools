@@ -1,4 +1,4 @@
-# Turkey Loans - Turkish Loans Management System
+# Safwat Al-Safwa International Schools - Educational Website
 
 <div align="center">
   <img src="https://img.shields.io/badge/Angular-19-red?style=for-the-badge&logo=angular" alt="Angular 19">
@@ -9,14 +9,14 @@
 
 ## 🌟 Overview
 
-Turkey Loans is a modern, multilingual web application built with Angular 19 for managing Turkish loans. The application features advanced SEO optimization, professional multilingual support, and a clean, responsive design.
+Safwat Al-Safwa International Schools is a modern, multilingual educational website built with Angular 19. The website showcases the school's educational programs, academic levels, faculty, and services. It features advanced SEO optimization, professional multilingual support, and a clean, responsive design tailored for educational institutions.
 
 ## 🚀 Key Features
 
 ### 🌍 **Professional Multilingual Support (Global Standard)**
 - **SEO-Optimized URLs**: Follows global standards like Google, Microsoft, Apple
-  - Arabic: `turkeyloans.intechdev.net/ar/`
-  - English: `turkeyloans.intechdev.net/en/`
+  - Arabic: `alsafwa-schools.com/ar/`
+  - English: `alsafwa-schools.com/en/`
 - **Automatic Language Detection**: Smart detection from URL, localStorage, and browser
 - **URL-Based Language Switching**: Clean URLs without query parameters
 - **RTL/LTR Support**: Full support for Arabic (RTL) and English (LTR)
@@ -25,18 +25,25 @@ Turkey Loans is a modern, multilingual web application built with Angular 19 for
 ### 🔍 **Enterprise-Grade SEO Features**
 - **International SEO**: Proper hreflang implementation like global companies
 - **Dynamic Meta Tags**: Real-time meta tag updates based on language
-- **Structured Data**: JSON-LD structured data for rich snippets
+- **Structured Data**: JSON-LD structured data for educational institutions
 - **Sitemap Generation**: Automatic sitemap with language variants
 - **Robots.txt**: Professional robots.txt configuration
 - **Performance Optimized**: Core Web Vitals friendly
 - **Canonical URLs**: Proper canonical URL management
 
-### 🎨 **Modern UI/UX**
+### 🎨 **Modern Educational UI/UX**
 - **Responsive Design**: Works perfectly on all devices
-- **Professional Styling**: Clean, modern interface
+- **Professional Styling**: Clean, modern interface for educational institutions
 - **Language Switcher**: Elegant dropdown language selector
-- **Company Information**: Professional footer with company details
-- **About Page**: Comprehensive project and company information
+- **School Information**: Professional footer with school details
+- **Academic Pages**: Comprehensive information about academic levels and programs
+
+### 📚 **Educational Content Management**
+- **Academic Levels**: Elementary, Intermediate, and Secondary stages
+- **Faculty Information**: Teaching staff and educational team
+- **Admissions Process**: Complete admission and registration information
+- **Remote Learning**: Distance learning programs and features
+- **Research Center**: Academic research and studies information
 
 ## 🛠️ Technology Stack
 
@@ -55,21 +62,38 @@ src/
 ├── app/
 │   ├── pages/
 │   │   ├── home/                 # Home page component
-│   │   └── about/                # About page component
+│   │   ├── about/                # About schools page
+│   │   ├── admissions/           # Admissions and registration
+│   │   ├── faculty/              # Faculty and teaching staff
+│   │   ├── institutes/           # Academic levels
+│   │   ├── contact/              # Contact information
+│   │   ├── remote-learning/      # Distance learning
+│   │   ├── research-center/      # Research and studies
+│   │   └── privacy/              # Privacy policy
 │   ├── shared/
 │   │   ├── components/
-│   │   │   ├── footer/           # Footer component
+│   │   │   ├── layout/           # Header and footer
+│   │   │   ├── banner/           # Hero banner
+│   │   │   ├── about/            # About section
+│   │   │   ├── faculty/          # Faculty section
+│   │   │   ├── institutes/       # Academic levels section
+│   │   │   ├── admissions/       # Admissions section
+│   │   │   ├── contact/          # Contact section
 │   │   │   └── language-switcher/ # Language switcher
 │   │   └── core/
 │   │       ├── interfaces/       # TypeScript interfaces
-│   │       └── services/         # Core services
+│   │       └── services/         # Core services (SEO, Language, etc.)
 │   ├── app.component.*           # Main app component
 │   ├── app.config.ts            # App configuration
 │   └── app.routes.ts            # Routing configuration
 ├── assets/
-│   └── i18n/                    # Translation files
-│       ├── ar.json              # Arabic translations
-│       └── en.json              # English translations
+│   ├── i18n/                    # Translation files
+│   │   ├── ar.json              # Arabic translations
+│   │   └── en.json              # English translations
+│   └── img/                     # Images and assets
+│       ├── education/           # Educational images
+│       ├── person/              # Faculty photos
+│       └── logo files          # School logos
 └── styles.scss                  # Global styles
 ```
 
@@ -85,7 +109,7 @@ src/
 1. **Clone the repository**
 ```bash
    git clone <repository-url>
-   cd Turkey_Loans
+   cd Alsafwa_Schools
 ```
 
 2. **Install dependencies**
@@ -104,8 +128,8 @@ src/
 ## 🌐 Multilingual Implementation (Global Standard)
 
 ### URL Structure (Following Global Companies)
-- **Arabic**: `turkeyloans.intechdev.net/ar/`
-- **English**: `turkeyloans.intechdev.net/en/`
+- **Arabic**: `alsafwa-schools.com/ar/`
+- **English**: `alsafwa-schools.com/en/`
 - **Auto-redirect**: Root URL redirects to Arabic by default
 
 ### Language Detection Priority
@@ -122,60 +146,25 @@ src/
 - **Sitemap**: Multi-language sitemap with proper hreflang
 - **Robots.txt**: Professional configuration for search engines
 
-## 🏢 Global SEO Standards Implementation
+## 🏫 School Information
 
-### How Global Companies Handle Multilingual SEO
+**Safwat Al-Safwa International Schools**
+- **Website**: https://alsafwa-schools.com
+- **Email**: info@alsafwa-schools.edu.sa
+- **Phone**: +966 555 888 999
+- **Address**: King Fahd Street, Riyadh, Saudi Arabia
+- **Mission**: Providing distinguished education from elementary to secondary levels
 
-#### **Google Approach**
-- `google.com/ar/` for Arabic
-- `google.com/en/` for English
-- Proper hreflang implementation
-- Canonical URLs for each language
+### Academic Levels
+- **Elementary Stage**: Foundation years with interactive learning
+- **Intermediate Stage**: Academic and professional principles
+- **Secondary Stage**: Preparation for higher education or career
 
-#### **Microsoft Approach**
-- `microsoft.com/ar-sa/` for Arabic (Saudi Arabia)
-- `microsoft.com/en-us/` for English (United States)
-- Geographic targeting
-- Language-specific content
-
-#### **Apple Approach**
-- `apple.com/ar/` for Arabic
-- `apple.com/en/` for English
-- Clean URL structure
-- Consistent navigation
-
-### Our Implementation
-We follow the same standards as these global companies:
-
-```html
-<!-- Hreflang Implementation -->
-<link rel="alternate" hreflang="ar" href="https://turkeyloans.intechdev.net/ar">
-<link rel="alternate" hreflang="en" href="https://turkeyloans.intechdev.net/en">
-<link rel="alternate" hreflang="x-default" href="https://turkeyloans.intechdev.net/ar">
-
-<!-- Meta Tags -->
-<meta name="language" content="ar">
-<meta property="og:locale" content="ar_SA">
-<meta name="geo.region" content="SA">
-```
-
-### SEO Best Practices Implemented
-- ✅ **Separate URLs**: Each language has its own URL
-- ✅ **Hreflang Tags**: Proper international SEO
-- ✅ **Canonical URLs**: Prevents duplicate content issues
-- ✅ **Meta Tags**: Dynamic and language-specific
-- ✅ **Sitemap**: Multi-language sitemap
-- ✅ **Robots.txt**: Professional configuration
-- ✅ **Structured Data**: JSON-LD for rich snippets
-
-## 🎯 Company Information
-
-**Developed by IN TECH**
-- **Website**: https://www.intechdev.net
-- **Email**: info@intechdev.net
-- **Phone**: +966 54 946 7661
-- **Address**: Riyadh, Saudi Arabia
-- **Motto**: "We Build You Grow"
+### Educational Features
+- **Interactive Learning**: Self-directed and collaborative learning
+- **Scientific Research**: Research skills development
+- **Remote Learning**: Flexible distance learning options
+- **Character Building**: Ethical and professional development
 
 ## 📝 Available Scripts
 
@@ -191,25 +180,27 @@ We follow the same standards as these global companies:
 ### Language Configuration
 The application supports easy addition of new languages:
 
-1. **Add language code** to `supported-languages.ts`
+1. **Add language code** to language service
 2. **Create translation file** in `src/assets/i18n/`
 3. **Update language service** configuration
 4. **Add language option** to switcher component
 
 ### SEO Configuration
-- **Meta tags** are automatically generated
+- **Meta tags** are automatically generated for educational content
 - **Hreflang tags** are dynamically created
 - **URL structure** follows best practices
 - **Performance** is optimized for Core Web Vitals
+- **Structured data** includes educational organization schema
 
 ## 🌟 Best Practices Implemented
 
 ### SEO Best Practices
 - ✅ Separate URLs for each language
 - ✅ Proper hreflang implementation
-- ✅ Meta tags optimization
+- ✅ Meta tags optimization for educational content
 - ✅ Clean URL structure
 - ✅ Performance optimization
+- ✅ Educational institution structured data
 
 ### Code Quality
 - ✅ TypeScript strict mode
@@ -221,7 +212,7 @@ The application supports easy addition of new languages:
 ### User Experience
 - ✅ Intuitive language switching
 - ✅ Smooth transitions
-- ✅ Professional design
+- ✅ Professional educational design
 - ✅ Mobile-first approach
 - ✅ Accessibility considerations
 
@@ -242,17 +233,17 @@ The application supports easy addition of new languages:
 
 ## 📄 License
 
-This project is developed by IN TECH. All rights reserved.
+This project is developed for Safwat Al-Safwa International Schools. All rights reserved.
 
 ## 📞 Support
 
 For support and inquiries:
-- **Email**: info@intechdev.net
-- **Website**: https://www.intechdev.net
+- **Email**: info@alsafwa-schools.edu.sa
+- **Website**: https://alsafwa-schools.com
 
 ---
 
 <div align="center">
-  <p>Made with ❤️ by <strong>IN TECH</strong></p>
-  <p><em>We Build You Grow</em></p>
+  <p>Made with ❤️ for <strong>Safwat Al-Safwa International Schools</strong></p>
+  <p><em>Excellence in Education</em></p>
 </div>
