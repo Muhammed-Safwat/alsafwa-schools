@@ -38,14 +38,14 @@ export class LanguageStoreService {
     this.setupEffects();
   }
 
-  private initializeLanguage(): void { 
+  private initializeLanguage(): void {
     this.translate.setDefaultLang(this.defaultLanguage);
     this.translate.setFallbackLang(this.defaultLanguage);
- 
+
     const localStorageLang = localStorage.getItem(this.LANGUAGE_KEY);
     const browserLang = this.translate.getBrowserLang()?.match(this.supportedLanguages.join('|'));
     const urlLang = this.getLanguageFromUrl();
-    
+
     let initialLang: ISupportedLanguages;
 
     if (localStorageLang && this.supportedLanguages.includes(localStorageLang)) {
@@ -61,15 +61,15 @@ export class LanguageStoreService {
     this.setLanguage(initialLang);
   }
 
-  private setupEffects(): void { 
+  private setupEffects(): void {
     effect(() => {
       const language = this._currentLanguage();
       const direction = this.direction();
-       
+
       document.documentElement.dir = direction;
       document.documentElement.lang = language;
       document.body.dir = direction;
-       
+
       if (direction === 'rtl') {
         document.documentElement.classList.add('rtl');
         document.documentElement.classList.remove('ltr');
@@ -124,10 +124,10 @@ export class LanguageStoreService {
       // Remove trailing slash if it's just the root path
       const cleanUrlWithoutLang = urlWithoutLang === '/' ? '' : urlWithoutLang;
       const newUrl = `/${lang}${cleanUrlWithoutLang}`;
-      
+
       // Update language first
       this.setLanguage(lang);
-      
+
       // Update meta tags
       this.updateMetaTagsForSEO(lang);
 

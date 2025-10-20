@@ -19,16 +19,8 @@ export const pagesRoutes: Routes = [
     loadComponent: () => import('./admissions/admissions.component').then(m => m.AdmissionsComponent)
   },
   {
-    path: 'faculty',
-    loadComponent: () => import('./faculty/faculty.component').then(m => m.FacultyComponent)
-  },
-  {
     path: 'institutes',
     loadComponent: () => import('./institutes/institutes.component').then(m => m.InstitutesComponent)
-  },
-  {
-    path: 'research',
-    loadComponent: () => import('./resarch-center/resarch-center.component').then(m => m.ResarchCenterComponent)
   },
   {
     path: 'remote-learning',
@@ -48,6 +40,6 @@ export const pagesRoutes: Routes = [
   },
   {
     path: '**',
-    loadComponent : () => import('./error-page/error-page.component').then(m => m.ErrorPageComponent)
+    loadComponent: () => import('./error-page/error-page.component').then(m => m.ErrorPageComponent)
   }
 ];
