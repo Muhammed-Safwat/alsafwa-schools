@@ -5,7 +5,12 @@
     "institutes": "Academic Levels",
     "remote_learning": "Remote Learning",
     "contact": "Contact Us",
-    "platform": "Platform"
+    "platform": "Platform",
+    "principles": "Principles",
+    "values": "Values",
+    "vision": "Vision",
+    "message": "Mission",
+    "goals": "Goals"
   },
   "footer": {
     "important_links": "Important Links",
@@ -68,8 +73,8 @@
     }
   },
   "about": {
-    "title": "Safwat Al Safwa Schools<br> <span>Towards Creative Education and a Bright Future</span>",
-    "description": "At Safwat Al Safwa Schools, we believe every student has the potential to excel and stand out. We offer a comprehensive learning experience that balances values, ethics, and practical knowledge, while focusing on developing leadership and creative skills. We prepare confident, innovative students ready to face future challenges and achieve their ambitions to the fullest.",
+    "title": "Empowering Students to Shape a Confident Future",
+    "description": "We believe that school is the true starting point for building a student's character—ethically, academically, and professionally—enabling them to understand their social environment and confidently face future challenges. With extensive experience in education and deep research in educational management and curriculum development, we established Safwat Al-Safwa International Schools as an educational beacon that combines academic and vocational learning with a strong focus on quality and innovation. We go beyond teaching beneficial knowledge; we develop strong personalities and shape a bright future built on solid values, ambitious vision, and realistic goals. We prepare students for success and positive contribution to their community—starting from the foundational elementary stage, progressing through the middle stage with broader applied sciences, and finally the high school stage where they are equipped with the keys to their future.",
     "years_excellence": "Years of Excellence",
     "students": "Students",
     "faculty_members": "Faculty Members",
@@ -85,8 +90,8 @@
   },
   "benefits": {
     "topTitle": "Benefits of Studying",
-    "title": "At Safwat Al Safwa Schools",
-    "description": "We provide our students with a comprehensive educational experience aimed at developing their character, enhancing their academic and social skills, instilling strong values and ethics, and inspiring creativity and excellence for their future life.",
+    "title": "at Safwat Al-Safwa International Schools",
+    "description": "We provide a holistic education that develops students’ character, strengthens their academic and social skills, instills strong values and ethics, and inspires creativity, excellence, and teamwork—preparing them for a successful future.",
     "useful_education": "Practical and Valuable Education",
     "useful_education_text": "Providing practical and meaningful education that enables students to succeed academically and professionally, preparing them to face future challenges.",
     "self_development": "Self-Development and Leadership Skills",
@@ -117,24 +122,37 @@
     "message_placeholder": "Write your message here...",
     "send_message": "Send Message"
   },
+  "scholarships": {
+    "title": "Scholarships",
+    "description": "We offer scholarships for academically outstanding students and talented learners across different grade levels to support their success and growth.",
+    "learn_more": "Learn More",
+    "virtual_tour": "Virtual Tour",
+    "academic_scholarship": "Academic Excellence Scholarships",
+    "talent_scholarship": "Talent and Skills Scholarships",
+    "academic_count": "Scholarships Annually",
+    "talent_count": "Supported Talented Students"
+  },
   "degrees": {
     "title": "Certificates Awarded by the Schools",
-    "description": "The Schools Council awards the following certificates based on the recommendation of the School Council:",
-    "diploma": "Elementary School Certificate",
-    "diploma_subtitle": "Elementary School Completion Certificate",
-    "diploma_description": "A certificate that qualifies the student to move to the intermediate stage",
-    "bachelor": "Intermediate School Certificate",
-    "bachelor_subtitle": "Intermediate School Completion Certificate",
-    "bachelor_description": "A certificate that qualifies the student to move to the secondary stage",
-    "specialization": "Secondary School Certificate",
-    "specialization_subtitle": "Secondary School Completion Certificate",
-    "specialization_description": "A certificate that qualifies the student to join university or the job market",
-    "high_specialization": "Excellence Certificate",
-    "high_specialization_subtitle": "Academic Excellence Certificate",
-    "high_specialization_description": "A certificate awarded to outstanding students in all stages",
-    "global_specialization": "Achievement Certificate",
-    "global_specialization_subtitle": "Personal Achievement Certificate",
-    "global_specialization_description": "A certificate awarded to students distinguished in activities and talents"
+    "description": "Safwat Al-Safwa International Schools award the following certificates:",
+    "diploma": "Progress Certificate",
+    "diploma_subtitle": "Certificate of Advancement to the Next Grade",
+    "diploma_description": "A certificate confirming that the student has progressed to the next grade",
+    "elementary": "Elementary Certificate",
+    "elementary_subtitle": "Elementary School Completion Certificate",
+    "elementary_description": "A certificate that qualifies the student to enter the intermediate stage",
+    "intermediate": "Intermediate Certificate",
+    "intermediate_subtitle": "Intermediate School Completion Certificate",
+    "intermediate_description": "A certificate that qualifies the student to enter the secondary stage",
+    "secondary": "Secondary Certificate",
+    "secondary_subtitle": "Secondary School Completion Certificate",
+    "secondary_description": "A certificate that qualifies the student to join university or the job market",
+    "excellence": "Academic Excellence Certificate",
+    "excellence_subtitle": "For Outstanding Academic Students",
+    "excellence_description": "Awarded to students with distinguished academic achievement",
+    "achievement": "Achievement Certificate",
+    "achievement_subtitle": "For Talented and Outstanding Students",
+    "achievement_description": "Awarded to students who excel in various activities and talents"
   },
   "example_card": {
     "university_name_ar": "مدارس صفوت الصفوة الدولية",
@@ -208,50 +226,57 @@
     "global_vision_text": "Cooperation with specialized schools and institutions internationally"
   },
   "institutes": {
-    "title": "Academic Levels",
-    "description": "We provide specialized educational programs that combine science and practical training to acquire practical skills in various academic levels",
-    "institutes_title": "Academic Levels",
-    "arabic_language_institute": "Elementary Stage",
-    "arabic_language_description": "The elementary stage is dedicated to teaching students the basics through a comprehensive curriculum and modern teaching methods to develop reading, writing, speaking, and listening skills",
-    "applied_sciences_institute": "Intermediate Stage",
-    "applied_sciences_description": "Provides specialized educational programs that combine science and practical training to help students acquire practical skills and prepare students according to secondary stage requirements",
+    "title": "Educational Stages",
+    "description": "We begin from the age of four and the stage is divided into two phases: the Foundation Phase and the Upper Elementary Phase.",
+    "institutes_title": "Educational Stages",
+    "elementary_institute": "Elementary Stage",
+    "elementary_description": "The elementary stage starts from the age of four and is divided into two phases. The Foundation Phase includes six academic levels based on guided learning with the aim of teaching: good morals and human behavior, reading and writing, arithmetic, Tajweed, and basic computer skills. The Upper Elementary Phase includes six academic levels based on interactive, self, and cooperative learning, and scientific research with the aim of teaching the fundamentals of: Arabic language, science, mathematics, religious studies, computer studies, geography, history, and English (optional subject).",
+    "middle_institute": "Middle School Stage",
+    "middle_description": "The middle school stage consists of six academic levels and adopts interactive, self, and cooperative learning as well as scientific research. Its goal is to expand students’ knowledge in the various sciences they studied in elementary school in addition to introducing applied sciences.",
+    "high_institute": "High School Stage",
+    "high_description": "The high school stage consists of six academic levels and concludes when the student reaches the age of fifteen. It adopts interactive, self, and cooperative learning as well as scientific research. It focuses on preparing students for a college education that suits their abilities or teaching a profession to qualify them to join the job market if they do not wish to pursue university studies.",
     "institute_goals": "Stage Goals:",
-    "available_programs": "Available Programs:",
-    "arabic_goals": [
+    "available_subjects": "Academic Fields:",
+    "elementary_goals": [
       "Develop reading, writing, speaking, and listening skills",
-      "Develop students' language skills",
-      "Introduce students to Arabic and Islamic culture and traditions",
-      "Use modern and advanced teaching methods"
+      "Enhance self-confidence and independence",
+      "Instill core moral values and ethics",
+      "Use modern interactive teaching methods"
     ],
-    "applied_sciences_goals": [
-      "Provide specialized educational and training programs",
-      "Combine science and practical training",
-      "Help students acquire required practical skills",
-      "Prepare students for secondary stage",
-      "Meet secondary stage requirements"
+    "middle_goals": [
+      "Connect academic knowledge with practical skills",
+      "Enhance critical and creative thinking",
+      "Prepare students for high school and university",
+      "Develop teamwork and collaboration skills"
     ],
-    "arabic_programs": [
-      "Basic Arabic Language Program",
-      "Advanced Conversation Program",
-      "Academic Writing Program",
-      "Quran Understanding Program",
-      "Arabic Culture Program",
-      "Spelling and Grammar Program"
+    "high_goals": [
+      "Prepare students for university and the job market",
+      "Develop practical and technical skills",
+      "Enhance scientific research and problem-solving",
+      "Develop leadership and effective communication skills"
     ],
-    "applied_sciences_programs": [
-      "Computer and Information Technology Program",
-      "Financial Accounting Program",
-      "Digital Marketing Program",
-      "Project Management Program",
-      "Graphic Design Program",
-      "Engineering Design Program",
-      "Architectural Design Program",
-      "Interior Design Program",
-      "Industrial Design Program",
-      "3D Design Program",
-      "Welding and Blacksmithing Program",
-      "Electrical and Electronics Program",
-      "Mechanics Program"
+    "elementary_subjects": [
+      "Arabic Language and Reading",
+      "Basic Mathematics",
+      "Natural Sciences",
+      "Islamic Education and Values",
+      "Arts and Creative Expression",
+      "Physical Education"
+    ],
+    "middle_subjects": [
+      "Arabic and English Language",
+      "Advanced Mathematics",
+      "Applied Sciences",
+      "Artistic and Practical Activities",
+      "Communication and Teamwork Skills"
+    ],
+    "high_subjects": [
+      "Advanced Mathematics and Sciences",
+      "Foreign Languages",
+      "Technical and Vocational Skills",
+      "Citizenship and Social Values",
+      "Research Activities and Innovation",
+      "Sports and Physical Education"
     ]
   },
   "mission_goals": {
@@ -765,7 +790,7 @@
   "page_titles": {
     "about": {
       "title": "About Schools",
-      "description": "Safwat Al-Safwa Schools are committed to providing high-quality education to graduate distinguished students who compete with students from the finest schools",
+      "description": "High-quality education starts with excellent curricula, management, and teachers. At Safwat Al-Safwa Schools, we ensure modern curricula and employ a selection of highly experienced educational professionals, focusing on nurturing values, ethics, and effective training.",
       "current_page": "About Schools"
     },
     "admissions": {

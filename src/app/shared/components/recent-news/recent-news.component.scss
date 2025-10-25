@@ -1,6 +1,10 @@
 /*--------------------------------------------------------------
 # Recent News Section
 --------------------------------------------------------------*/
+.recent-news {
+  background-color: white;
+}
+
 .recent-news article {
   background: var(--surface-color);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);

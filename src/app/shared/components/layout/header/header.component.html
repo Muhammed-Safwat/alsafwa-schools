@@ -18,12 +18,28 @@
           </a>
         </li>
 
-        <li>
-          <a appAutoLanguageLink="/about"
+        <li class="dropdown "
+            ngbDropdown>
+          <a class="dropdown-toggle d-flex align-items-center gap-2"
+             ngbDropdownToggle
+             appAutoLanguageLink="/about"
              routerLinkActive="active">
             {{ 'header.about' | translate }}
           </a>
+          <ul ngbDropdownMenu>
+            <li><a ngbDropdownItem
+                 appAutoLanguageLink="/about">{{ 'header.principles' | translate }}</a></li>
+            <li><a ngbDropdownItem
+                 appAutoLanguageLink="/about">{{ 'header.values' | translate }}</a></li>
+            <li><a ngbDropdownItem
+                 appAutoLanguageLink="/about">{{ 'header.vision' | translate }}</a></li>
+            <li><a ngbDropdownItem
+                 appAutoLanguageLink="/about">{{ 'header.message' | translate }}</a></li>
+            <li><a ngbDropdownItem
+                 appAutoLanguageLink="/about">{{ 'header.goals' | translate }}</a></li>
+          </ul>
         </li>
+
 
         <li>
           <a appAutoLanguageLink="/institutes"
